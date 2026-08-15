@@ -37,10 +37,9 @@ function initSupabaseAuth() {
 
 function esRutaRestringida(path) {
     const p = decodeURIComponent(path).toUpperCase();
-    // Módulos VIII e IX HABILITADOS para todos — no restringidos
+    // Módulos VIII, IX y X HABILITADOS para todos — no restringidos
     if (p.includes("MODULO_XI") || p.includes("MODULO XI")) return true;
     if (p.includes("MODULO_XII") || p.includes("MODULO XII")) return true;
-    if (p.includes("MODULO_X.HTML") || p.includes("MODULO X/") || p.includes("MODULO_X/")) return true;
     return false;
 }
 
@@ -101,9 +100,34 @@ function actualizarVistaModulosIndex(isAdmin) {
             }
         }
 
-        // Módulos restringidos (X, XI, XII)
+        // Módulo X: SIEMPRE habilitado para todos los usuarios
+        const modulo10container = document.getElementById("modulo10");
+        if (modulo10container) {
+            const badge10 = modulo10container.querySelector(".flex.justify-between.items-start.mb-4");
+            const btn10 = modulo10container.querySelector(".flex.flex-col.mt-auto");
+            if (badge10) {
+                badge10.innerHTML = `
+                    <div>
+                        <span class="bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider"><i class="fas fa-check-circle mr-1 text-emerald-600"></i> DISPONIBLE</span>
+                        <span class="text-slate-600 text-xs font-semibold ml-2">MÓDULO X</span>
+                    </div>
+                    <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-0.5 rounded-full">Nuevo</span>
+                `;
+            }
+            if (btn10) {
+                btn10.innerHTML = `
+                    <a href="MODULO X/MODULO_X.html" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white py-3 rounded-lg font-bold flex items-center justify-center transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="fas fa-book-open mr-2"></i> Acceder al Módulo X
+                    </a>
+                    <a href="MODULO X/Trabajo_Academico_Modulo_X_Analisis_de_la_Contabilidad.pdf" target="_blank" class="w-full bg-white border border-emerald-200 text-emerald-700 hover:bg-emerald-50 py-2.5 rounded-lg font-semibold flex items-center justify-center transition-all text-sm mt-2">
+                        <i class="fas fa-file-pdf mr-2 text-red-500"></i> Tratado Académico (PDF)
+                    </a>
+                `;
+            }
+        }
+
+        // Módulos restringidos (XI, XII)
         const modulos = [
-            { id: "modulo10", num: "X", url: "MODULO X/MODULO_X.html" },
             { id: "modulo11", num: "XI", url: "MODULO XI/MODULO_XI.html" },
             { id: "modulo12", num: "XII", url: "MODULO XII/MODULO_XII.html" }
         ];
