@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía Didáctica Interactiva Módulo X | Diplomado UCSAR</title>
+    <title>Módulo X: Análisis de la Contabilidad y Planificación Financiera | UCSAR</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- KaTeX Math Rendering -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     <!-- Supabase JS Library CDN & Auth Core -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../js/auth.js?v=6"></script>
     
     <style>
         body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #334155; }
-        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; color: #0f172a; }
+        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
         .tab-content { display: none; }
         .tab-content.active { display: block; animation: fadeIn 0.4s ease-in-out; }
-        .tab-button.active { background-color: #059669; color: #ffffff; box-shadow: 0 4px 14px 0 rgba(5, 150, 105, 0.39); }
+        .tab-button.active { background-color: #059669; color: #ffffff; box-shadow: 0 4px 14px 0 rgba(5, 150, 105, 0.35); }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
@@ -41,311 +37,304 @@
                         <span class="text-xs text-emerald-300 font-medium">Diplomado en Contabilidad Financiera</span>
                     </div>
                 </div>
-                <a href="../index.html" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-semibold transition border border-slate-700 hover:bg-slate-800">
+                <a href="../index.html" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-semibold transition border border-slate-700 hover:bg-slate-800 flex items-center gap-2">
                     <i class="fas fa-home"></i> Inicio
                 </a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 text-white py-12 px-4 shadow-xl">
+    <!-- HEADER PRINCIPAL -->
+    <header class="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 text-white py-10 px-4 shadow-xl">
         <div class="max-w-7xl mx-auto">
             <div class="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/30 px-3.5 py-1 rounded-full text-emerald-300 text-xs font-bold uppercase mb-4">
-                <i class="fas fa-graduation-cap text-amber-400"></i> Guía Didáctica Asíncrona • Módulo X
+                <i class="fas fa-graduation-cap text-amber-400"></i> Guía Didáctica Asíncrona & Laboratorio Interactivo • Módulo X
             </div>
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Análisis de la Contabilidad</h1>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-3">MÓDULO 10: ANÁLISIS DE LA CONTABILIDAD</h1>
             <p class="text-slate-300 text-base sm:text-lg max-w-3xl mb-6">
-                Diagnóstico financiero integral: Análisis del Balance, Análisis Económico, Ratios de Liquidez y Solvencia, Punto de Equilibrio y Modelo DuPont (ROA/ROE).
+                Diagnóstico patrimonial, evaluación económica, simulación de punto de equilibrio, modelo DuPont y laboratorio de planificación financiera estratégica.
             </p>
             
-            <!-- Banner de Material PDF -->
-            <div class="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-4 sm:p-5 backdrop-blur-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div class="flex items-center gap-3">
-                    <div class="bg-red-500/20 text-red-400 p-3 rounded-xl border border-red-500/30">
-                        <i class="fas fa-file-pdf text-2xl"></i>
-                    </div>
+            <!-- DESCARGAS DE MATERIALES -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-slate-900/90 border border-emerald-500/30 rounded-2xl p-4 backdrop-blur-md">
+                <a href="Trabajo_Academico_Modulo_X_Analisis_de_la_Contabilidad.pdf" target="_blank" class="bg-red-600/90 hover:bg-red-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
+                    <i class="fas fa-file-pdf text-xl text-red-300"></i>
                     <div>
-                        <h4 class="font-bold text-white text-sm sm:text-base">Tratado Académico de Lectura (PDF)</h4>
-                        <p class="text-xs text-slate-300">Documento con análisis patrimonial, ratios financieros, Modelo DuPont y fórmulas.</p>
-                        <p class="text-[11px] text-emerald-400 font-semibold mt-0.5">Elaborado por: MSc. Frank Clemente</p>
+                        <span class="block">Tratado Académico (PDF)</span>
+                        <span class="text-[10px] text-red-200 font-normal">Teoría y Fórmulas Doctrinales</span>
                     </div>
-                </div>
-                <a href="Trabajo_Academico_Modulo_X_Analisis_de_la_Contabilidad.pdf" target="_blank" class="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-bold px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 shadow-lg transition w-full sm:w-auto justify-center">
-                    <i class="fas fa-download"></i> Descargar / Ver PDF
+                </a>
+                <a href="Caso_Practico_y_Solucionario_Los_Andes_Modulo_X.pdf" target="_blank" class="bg-indigo-600/90 hover:bg-indigo-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
+                    <i class="fas fa-file-invoice-dollar text-xl text-indigo-300"></i>
+                    <div>
+                        <span class="block">Caso & Solucionario (PDF)</span>
+                        <span class="text-[10px] text-indigo-200 font-normal">Caso Comercializadora Los Andes</span>
+                    </div>
+                </a>
+                <a href="Estados_Financieros_Los_Andes_Caso_Practico_Modulo_X.xlsx" download class="bg-emerald-600/90 hover:bg-emerald-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
+                    <i class="fas fa-file-excel text-xl text-emerald-300"></i>
+                    <div>
+                        <span class="block">Cuaderno de Trabajo (Excel)</span>
+                        <span class="text-[10px] text-emerald-200 font-normal">Plantilla & Solucionario .XLSX</span>
+                    </div>
                 </a>
             </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow">
+    <!-- CONTENIDO PRINCIPAL Y PESTAÑAS -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
 
+        <!-- NAVEGACIÓN POR PESTAÑAS -->
         <div class="bg-white p-2 rounded-2xl shadow-sm border border-slate-200 mb-8 overflow-x-auto">
             <div class="flex space-x-2 min-w-max">
                 <button onclick="switchTab('u1')" id="tab-u1" class="tab-button active px-5 py-3 rounded-xl font-bold text-sm">U1. Análisis del Balance</button>
                 <button onclick="switchTab('u2')" id="tab-u2" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U2. Análisis Económico</button>
-                <button onclick="switchTab('u3')" id="tab-u3" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U3. Rentabilidad (ROA/ROE)</button>
+                <button onclick="switchTab('u3')" id="tab-u3" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U3. Rentabilidad (DuPont)</button>
+                <button onclick="switchTab('u4')" id="tab-u4" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm bg-amber-50 text-amber-800 border border-amber-300"><i class="fas fa-sliders mr-1 text-amber-600"></i> U4. Simulador de Planificación</button>
             </div>
         </div>
 
-        <!-- UNIDAD 1 -->
+        <!-- UNIDAD 1: ANÁLISIS DEL BALANCE -->
         <div id="u1" class="tab-content active space-y-6">
-            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200">
-                <h2 class="text-2xl font-bold mb-2">Unidad 1: Análisis del Balance</h2>
-                <p class="text-slate-500 text-sm mb-6">Diagnóstico del equilibrio patrimonial, liquidez, solvencia y estado de flujos de efectivo.</p>
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Unidad 1: Análisis del Balance (Patrimonial y Financiero)</h2>
+                    <p class="text-slate-500 text-sm">Evaluación de la estructura de recursos, liquidez general, solvencia y estado de origen/aplicación de fondos (EOAF).</p>
+                </div>
+
+                <!-- SIMULADOR INTERACTIVO DE RATIOS DE LIQUIDEZ -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 shadow-lg border border-slate-800 space-y-4">
+                    <h3 class="text-lg font-bold text-emerald-400 flex items-center gap-2">
+                        <i class="fas fa-calculator"></i> Calculadora Interactiva de Ratios de Liquidez (Unidad 1)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
+                        <div>
+                            <label class="block text-slate-400 mb-1">Activo Corriente (BS):</label>
+                            <input type="number" id="input-ac" value="575000" class="w-full bg-slate-950 border border-slate-700 text-emerald-300 p-2.5 rounded-lg font-mono">
+                        </div>
+                        <div>
+                            <label class="block text-slate-400 mb-1">Pasivo Corriente (BS):</label>
+                            <input type="number" id="input-pc" value="275000" class="w-full bg-slate-950 border border-slate-700 text-emerald-300 p-2.5 rounded-lg font-mono">
+                        </div>
+                        <div>
+                            <label class="block text-slate-400 mb-1">Inventarios (BS):</label>
+                            <input type="number" id="input-inv" value="320000" class="w-full bg-slate-950 border border-slate-700 text-emerald-300 p-2.5 rounded-lg font-mono">
+                        </div>
+                        <div>
+                            <label class="block text-slate-400 mb-1">Efectivo en Bancos (BS):</label>
+                            <input type="number" id="input-ef" value="5000" class="w-full bg-slate-950 border border-slate-700 text-emerald-300 p-2.5 rounded-lg font-mono">
+                        </div>
+                    </div>
+                    <button onclick="calcularRatiosU1()" class="bg-emerald-600 hover:bg-emerald-500 font-bold text-white px-4 py-2 rounded-lg text-xs flex items-center gap-2">
+                        <i class="fas fa-play"></i> Calcular Ratios de Liquidez
+                    </button>
+                    <div id="res-ratios-u1" class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2"></div>
+                </div>
 
                 <!-- SÍNTESIS TEÓRICA -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 mb-8 space-y-4 text-slate-600 text-sm sm:text-base">
-                    <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
-                        <i class="fas fa-book-bookmark text-emerald-600"></i> Contenidos Temáticos - Unidad 1
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 text-slate-600 text-sm">
+                    <h4 class="font-bold text-slate-900 text-base"><i class="fas fa-book-bookmark text-emerald-600 mr-1"></i> Resumen Teórico y Doctrinal</h4>
+                    <p>• <strong>Análisis Vertical (%):</strong> Mide la proporción de cada cuenta respecto al Total Activo (100%).</p>
+                    <p>• <strong>Análisis Horizontal (Δ):</strong> Mide la variación absoluta en bolívares y relativa en % entre dos ejercicios económicos.</p>
+                    <p>• <strong>Fondo de Maniobra (FM = AC - PC):</strong> Zona de seguridad financiera (Caso Los Andes: FM = +300.000 BS, pero distorsionado por cartera e inventario ilíquido).</p>
+                    <p>• <strong>Regla de Oro de Cobros y Pagos:</strong> El Período Medio de Cobro debe ser menor al Período Medio de Pago (PMC &lt; PMP).</p>
+                </div>
+
+                <!-- CUESTIONARIO Y TELEGRAM U1 -->
+                <div class="bg-emerald-950 text-white rounded-3xl p-6 shadow-xl space-y-4">
+                    <h3 class="text-lg font-bold text-emerald-300 flex items-center gap-2">
+                        <i class="fas fa-pen-to-square"></i> Cuestionario Evaluativo - Unidad 1
                     </h3>
-                    <p><strong>1.1 Porcentajes Verticales y Horizontales:</strong> Medición de la estructura patrimonial y variaciones tendenciales de activos y pasivos.</p>
-                    <p><strong>1.2 Representación Gráfica y Maniobra:</strong> Evaluación del Fondo de Maniobra (Capital de Trabajo Neto = AC - PC > 0).</p>
-                    <p><strong>1.3 Estado de Origen y Aplicación de Fondos (EOAF):</strong> Clasificación de movimientos en fuentes u orígenes vs. usos o aplicaciones.</p>
-                    <p><strong>1.4 Estado de Flujos de Efectivo (Sección 7 NIIF PYME):</strong> Actividades de Operación, Inversión y Financiamiento (Método Directo e Indirecto).</p>
-                    <p><strong>1.5 Estado de Cambios en el Patrimonio (Sección 6 NIIF PYME):</strong> Variación de reservas, capital social y ganancias acumuladas.</p>
-                    <p><strong>1.6 Ratios de Liquidez y Solvencia:</strong> Razón Corriente (RC), Prueba Ácida (PA), Ratio de Endeudamiento, Período Medio de Cobro (PMC) y Pago (PMP).</p>
+                    <div class="space-y-3 text-xs">
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                            <span class="bg-emerald-600 text-white font-bold px-2 py-0.5 rounded mr-2">Pregunta 1.1</span>
+                            <strong>¿Por qué cayó el saldo de efectivo de 45.000 a 5.000 BS a pesar de tener una utilidad neta de 126.000 BS?</strong>
+                        </div>
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                            <span class="bg-emerald-600 text-white font-bold px-2 py-0.5 rounded mr-2">Pregunta 1.2</span>
+                            <strong>Calcule e interprete la Razón Corriente (2,09) y la Prueba Ácida (0,93) del Año 2 en Caso Los Andes.</strong>
+                        </div>
+                    </div>
+                    <textarea id="ans-m10-u1" rows="3" placeholder="Escribe tus respuestas para Telegram..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs font-mono"></textarea>
+                    <button onclick="copiarRespuestas('ans-m10-u1', 'Módulo 10 - Unidad 1')" class="bg-emerald-600 hover:bg-emerald-500 font-bold text-white px-4 py-2.5 rounded-xl text-xs flex items-center gap-2">
+                        <i class="fas fa-copy"></i> Copiar Respuestas para Telegram
+                    </button>
                 </div>
-
-                <!-- CUESTIONARIO PRÁCTICO U1 -->
-                <div class="bg-emerald-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="bg-amber-500/20 text-amber-400 p-2.5 rounded-xl border border-amber-500/30">
-                            <i class="fas fa-pen-to-square text-lg"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-emerald-300">Cuestionario Práctico Evaluativo - Unidad 1</h3>
-                            <p class="text-xs text-slate-300">Responde las siguientes preguntas evaluativas de la Unidad 1.</p>
-                        </div>
-                    </div>
-
-                    <div class="space-y-5 text-sm">
-                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                            <div class="mb-1"><span class="bg-emerald-600 text-white text-[11px] font-bold px-2 py-0.5 rounded mr-2">Pregunta 1.1</span></div>
-                            <strong class="text-slate-200">Una empresa presenta: Activo Corriente: 150.000 BS | Pasivo Corriente: 75.000 BS | Inventarios: 45.000 BS. Calcule e interprete la Razón Corriente y la Prueba Ácida.</strong>
-                        </div>
-                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                            <div class="mb-1"><span class="bg-emerald-600 text-white text-[11px] font-bold px-2 py-0.5 rounded mr-2">Pregunta 1.2</span></div>
-                            <strong class="text-slate-200">¿Cuáles son las 3 actividades en que se clasifica el Estado de Flujos de Efectivo bajo la Sección 7 de la NIIF para las PYMES? Dé un ejemplo práctico de cada una.</strong>
-                        </div>
-
-                        <!-- Instrucciones de envío -->
-                        <div class="bg-emerald-900/60 border border-emerald-500/30 p-4 rounded-xl text-xs text-emerald-200">
-                            <h4 class="font-bold text-amber-300 mb-1 flex items-center gap-2">
-                                <i class="fas fa-circle-info"></i> ¿Cómo enviar tus respuestas por Telegram?
-                            </h4>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                                <li>Escribe tus respuestas en el cuadro inferior.</li>
-                                <li>Presiona el botón <strong>"Copiar Mis Respuestas para Telegram"</strong>.</li>
-                                <li>Abre Telegram y presiona <strong>Pegar (Ctrl + V)</strong> para publicar en el grupo evaluativo.</li>
-                            </ol>
-                        </div>
-
-                        <textarea id="ans-m10-u1" rows="5" placeholder="Escribe tus respuestas detalladas aquí..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-4 text-xs font-mono focus:border-amber-400 focus:outline-none"></textarea>
-                        <button onclick="copiarRespuestas('ans-m10-u1', 'Módulo 10 - Unidad 1')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-3 rounded-xl text-xs transition flex items-center gap-2">
-                            <i class="fas fa-copy"></i> Copiar Mis Respuestas para Telegram
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Sala de Debate U1 -->
-                <div class="mt-8 bg-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800">
-                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
-                        <div>
-                            <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
-                                <i class="fas fa-comments"></i> Sala de Debate y Consultas - Unidad 1
-                            </h3>
-                            <p class="text-xs text-slate-400">Foro de discusión sobre análisis patrimonial y ratios de liquidez.</p>
-                        </div>
-                        <span class="bg-emerald-900/80 text-emerald-300 text-xs px-3 py-1 rounded-full font-bold">Chat de Unidad</span>
-                    </div>
-
-                    <div id="comments-list-u1" class="space-y-3 mb-4 max-h-60 overflow-y-auto pr-2"></div>
-
-                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
-                        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 p-2.5 rounded-xl text-xs">
-                            <span class="text-slate-400"><i class="fas fa-user-check text-emerald-400 mr-1"></i> Usuario Autenticado:</span>
-                            <span id="user-badge-u1" class="font-bold text-emerald-300 flex items-center gap-1">
-                                <i class="fas fa-circle-notch fa-spin text-amber-400"></i> Verificando datos de sesión...
-                            </span>
-                        </div>
-                        <textarea id="msg-u1" rows="2" placeholder="Escribe tu duda o aporte sobre la Unidad 1..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs focus:outline-none focus:border-amber-400"></textarea>
-                        <button onclick="publicarComentario('u1')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-2 transition">
-                            <i class="fas fa-paper-plane"></i> Publicar en la Sala de Debate
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </div>
 
-        <!-- UNIDAD 2 -->
+        <!-- UNIDAD 2: ANÁLISIS ECONÓMICO -->
         <div id="u2" class="tab-content space-y-6">
-            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200">
-                <h2 class="text-2xl font-bold mb-2">Unidad 2: Análisis Económico</h2>
-                <p class="text-slate-500 text-sm mb-6">Análisis de la cuenta de resultados, apalancamiento operativo y punto de equilibrio.</p>
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Unidad 2: Análisis Económico (Estructura, Gastos y Punto de Equilibrio)</h2>
+                    <p class="text-slate-500 text-sm">Evaluación de la eficiencia de las ventas, descomposición de 100 UM y simulación del Punto de Equilibrio (Break-Even Point).</p>
+                </div>
 
-                <!-- SÍNTESIS TEÓRICA -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 mb-8 space-y-4 text-slate-600 text-sm sm:text-base">
-                    <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
-                        <i class="fas fa-book-bookmark text-emerald-600"></i> Contenidos Temáticos - Unidad 2
+                <!-- SIMULADOR INTERACTIVO DE PUNTO DE EQUILIBRIO -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 shadow-lg border border-slate-800 space-y-4">
+                    <h3 class="text-lg font-bold text-teal-400 flex items-center gap-2">
+                        <i class="fas fa-scale-balanced"></i> Simulador de Punto de Equilibrio Operativo (Unidad 2)
                     </h3>
-                    <p><strong>2.1 Análisis de la Cuenta de Resultados:</strong> Estructura porcentual sobre el 100% de Ventas Netas.</p>
-                    <p><strong>2.2 Gráfico de Cascada (EBIT / EBITDA):</strong> Representación visual del consumo del ingreso monetario por niveles de costo.</p>
-                    <p><strong>2.3 Tasa de Expansión de Ventas:</strong> Crecimiento nominal vs. Crecimiento real deflactado por INPC (BA VEN-NIF 8).</p>
-                    <p><strong>2.4 Destino de cada 100 UM Vendidas:</strong> Descomposición en Costo de Ventas, Gastos Operativos, Financieros e ISLR, y Utilidad Neta.</p>
-                    <p><strong>2.5 Gastos Fijos vs. Variables y Apalancamiento:</strong> Grado de Apalancamiento Operativo (GAO).</p>
-                    <p><strong>2.6 Punto de Equilibrio ($Q_e$ y $V_e$):</strong> Cálculo exacto en unidades y bolívares para utilidad operativa cero.</p>
-                </div>
-
-                <!-- CUESTIONARIO PRÁCTICO U2 -->
-                <div class="bg-emerald-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="bg-amber-500/20 text-amber-400 p-2.5 rounded-xl border border-amber-500/30">
-                            <i class="fas fa-pen-to-square text-lg"></i>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
+                        <div>
+                            <label class="block text-slate-400 mb-1">Costos Fijos Totales (CFT BS):</label>
+                            <input type="number" id="input-cft" value="245000" class="w-full bg-slate-950 border border-slate-700 text-teal-300 p-2.5 rounded-lg font-mono">
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold text-emerald-300">Cuestionario Práctico Evaluativo - Unidad 2</h3>
-                            <p class="text-xs text-slate-300">Responde las siguientes preguntas evaluativas de la Unidad 2.</p>
+                            <label class="block text-slate-400 mb-1">Costos Variables Totales (CVT BS):</label>
+                            <input type="number" id="input-cvt" value="950000" class="w-full bg-slate-950 border border-slate-700 text-teal-300 p-2.5 rounded-lg font-mono">
                         </div>
-                    </div>
-
-                    <div class="space-y-5 text-sm">
-                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                            <div class="mb-1"><span class="bg-emerald-600 text-white text-[11px] font-bold px-2 py-0.5 rounded mr-2">Pregunta 2.1</span></div>
-                            <strong class="text-slate-200">Una empresa vende a PVU = 100 BS. El Costo Variable Unitario es CVU = 60 BS y Costos Fijos Totales son CFT = 40.000 BS. Calcule el Punto de Equilibrio en Unidades ($Q_e$) y en Bolívares ($V_e$).</strong>
-                        </div>
-
-                        <!-- Instrucciones -->
-                        <div class="bg-emerald-900/60 border border-emerald-500/30 p-4 rounded-xl text-xs text-emerald-200">
-                            <h4 class="font-bold text-amber-300 mb-1 flex items-center gap-2">
-                                <i class="fas fa-circle-info"></i> ¿Cómo enviar tus respuestas por Telegram?
-                            </h4>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                                <li>Escribe tus respuestas abajo.</li>
-                                <li>Presiona <strong>"Copiar Mis Respuestas para Telegram"</strong>.</li>
-                                <li>Abre Telegram y presiona <strong>Pegar (Ctrl + V)</strong> para publicar en el grupo evaluativo.</li>
-                            </ol>
-                        </div>
-
-                        <textarea id="ans-m10-u2" rows="5" placeholder="Escribe tus respuestas detalladas aquí..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-4 text-xs font-mono focus:border-amber-400 focus:outline-none"></textarea>
-                        <button onclick="copiarRespuestas('ans-m10-u2', 'Módulo 10 - Unidad 2')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-3 rounded-xl text-xs transition flex items-center gap-2">
-                            <i class="fas fa-copy"></i> Copiar Mis Respuestas para Telegram
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Sala de Debate U2 -->
-                <div class="mt-8 bg-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800">
-                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
                         <div>
-                            <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
-                                <i class="fas fa-comments"></i> Sala de Debate y Consultas - Unidad 2
-                            </h3>
-                            <p class="text-xs text-slate-400">Debate sobre apalancamiento operativo y punto de equilibrio.</p>
+                            <label class="block text-slate-400 mb-1">Ventas Netas Totales (BS):</label>
+                            <input type="number" id="input-ventas" value="1400000" class="w-full bg-slate-950 border border-slate-700 text-teal-300 p-2.5 rounded-lg font-mono">
                         </div>
-                        <span class="bg-emerald-900/80 text-emerald-300 text-xs px-3 py-1 rounded-full font-bold">Chat de Unidad</span>
-                    </div>
-
-                    <div id="comments-list-u2" class="space-y-3 mb-4 max-h-60 overflow-y-auto pr-2"></div>
-
-                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
-                        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 p-2.5 rounded-xl text-xs">
-                            <span class="text-slate-400"><i class="fas fa-user-check text-emerald-400 mr-1"></i> Usuario Autenticado:</span>
-                            <span id="user-badge-u2" class="font-bold text-emerald-300 flex items-center gap-1">
-                                <i class="fas fa-circle-notch fa-spin text-amber-400"></i> Verificando datos de sesión...
-                            </span>
+                        <div>
+                            <label class="block text-slate-400 mb-1">Precio Venta Unitario (PVU BS):</label>
+                            <input type="number" id="input-pvu" value="110" class="w-full bg-slate-950 border border-slate-700 text-teal-300 p-2.5 rounded-lg font-mono">
                         </div>
-                        <textarea id="msg-u2" rows="2" placeholder="Escribe tu mensaje para la clase..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs focus:outline-none focus:border-amber-400"></textarea>
-                        <button onclick="publicarComentario('u2')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-2 transition">
-                            <i class="fas fa-paper-plane"></i> Publicar en la Sala de Debate
-                        </button>
                     </div>
+                    <button onclick="calcularPuntoEquilibrio()" class="bg-teal-600 hover:bg-teal-500 font-bold text-white px-4 py-2 rounded-lg text-xs flex items-center gap-2">
+                        <i class="fas fa-play"></i> Simular Punto de Equilibrio
+                    </button>
+                    <div id="res-pe" class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2"></div>
                 </div>
 
+                <!-- CUESTIONARIO U2 -->
+                <div class="bg-emerald-950 text-white rounded-3xl p-6 shadow-xl space-y-4">
+                    <h3 class="text-lg font-bold text-emerald-300 flex items-center gap-2">
+                        <i class="fas fa-pen-to-square"></i> Cuestionario Evaluativo - Unidad 2
+                    </h3>
+                    <div class="space-y-3 text-xs">
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                            <span class="bg-teal-600 text-white font-bold px-2 py-0.5 rounded mr-2">Pregunta 2.1</span>
+                            <strong>¿De cada 100 BS vendidos en el Año 2, cuántos bolívares van a Costo de Ventas, Gastos Operativos y Utilidad Neta?</strong>
+                        </div>
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                            <span class="bg-teal-600 text-white font-bold px-2 py-0.5 rounded mr-2">Pregunta 2.2</span>
+                            <strong>¿Cuál es el Punto de Equilibrio en Bolívares (762.222,22 BS) y qué colchón de seguridad representa sobre las ventas reales?</strong>
+                        </div>
+                    </div>
+                    <textarea id="ans-m10-u2" rows="3" placeholder="Escribe tus respuestas para Telegram..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs font-mono"></textarea>
+                    <button onclick="copiarRespuestas('ans-m10-u2', 'Módulo 10 - Unidad 2')" class="bg-emerald-600 hover:bg-emerald-500 font-bold text-white px-4 py-2.5 rounded-xl text-xs flex items-center gap-2">
+                        <i class="fas fa-copy"></i> Copiar Respuestas para Telegram
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- UNIDAD 3 -->
+        <!-- UNIDAD 3: RENTABILIDAD Y DUPONT -->
         <div id="u3" class="tab-content space-y-6">
-            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200">
-                <h2 class="text-2xl font-bold mb-2">Unidad 3: Análisis de la Rentabilidad</h2>
-                <p class="text-slate-500 text-sm mb-6">Medición de la rentabilidad del activo (ROA), rentabilidad del patrimonio (ROE) y el Modelo DuPont.</p>
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Unidad 3: Análisis de la Rentabilidad (ROA, ROE y Modelo DuPont)</h2>
+                    <p class="text-slate-500 text-sm">Medición del rendimiento de los activos y descomposición del retorno de los accionistas en 3 palancas financieras.</p>
+                </div>
 
-                <!-- SÍNTESIS TEÓRICA -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 mb-8 space-y-4 text-slate-600 text-sm sm:text-base">
-                    <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
-                        <i class="fas fa-book-bookmark text-emerald-600"></i> Contenidos Temáticos - Unidad 3
+                <!-- SIMULADOR INTERACTIVO DUPONT -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 shadow-lg border border-slate-800 space-y-4">
+                    <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
+                        <i class="fas fa-cubes"></i> Simulador del Modelo DuPont (Unidad 3)
                     </h3>
-                    <p><strong>3.1 ROA (Return on Assets):</strong> Eficiencia de los activos totales en la generación de utilidades ($\text{Utilidad Neta} / \text{Activo Total}$).</p>
-                    <p><strong>3.2 ROE (Return on Equity):</strong> Retorno neto sobre la inversión exclusiva de los accionistas ($\text{Utilidad Neta} / \text{Patrimonio Neto}$).</p>
-                    <p><strong>3.3 Modelo DuPont:</strong> Descomposición del ROE en 3 palancas (Margen Neto $\times$ Rotación de Activos $\times$ Apalancamiento Financiero).</p>
-                </div>
-
-                <!-- CUESTIONARIO PRÁCTICO U3 -->
-                <div class="bg-emerald-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="bg-amber-500/20 text-amber-400 p-2.5 rounded-xl border border-amber-500/30">
-                            <i class="fas fa-pen-to-square text-lg"></i>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                        <div>
+                            <label class="block text-slate-400 mb-1">Margen Neto (%):</label>
+                            <input type="number" id="input-mn" value="9.00" step="0.1" class="w-full bg-slate-950 border border-slate-700 text-amber-300 p-2.5 rounded-lg font-mono">
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold text-emerald-300">Cuestionario Práctico Evaluativo - Unidad 3</h3>
-                            <p class="text-xs text-slate-300">Responde las siguientes preguntas evaluativas de la Unidad 3.</p>
+                            <label class="block text-slate-400 mb-1">Rotación de Activos (Veces):</label>
+                            <input type="number" id="input-rot" value="1.595" step="0.01" class="w-full bg-slate-950 border border-slate-700 text-amber-300 p-2.5 rounded-lg font-mono">
                         </div>
-                    </div>
-
-                    <div class="space-y-5 text-sm">
-                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                            <div class="mb-1"><span class="bg-emerald-600 text-white text-[11px] font-bold px-2 py-0.5 rounded mr-2">Pregunta 3.1</span></div>
-                            <strong class="text-slate-200">Utilidad Neta: 30.000 BS | Activos Totales: 200.000 BS | Patrimonio Neto: 100.000 BS. Calcule e interprete el ROA y el ROE. Explique la diferencia estructural entre ambos indicadores.</strong>
-                        </div>
-
-                        <!-- Instrucciones -->
-                        <div class="bg-emerald-900/60 border border-emerald-500/30 p-4 rounded-xl text-xs text-emerald-200">
-                            <h4 class="font-bold text-amber-300 mb-1 flex items-center gap-2">
-                                <i class="fas fa-circle-info"></i> ¿Cómo enviar tus respuestas por Telegram?
-                            </h4>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                                <li>Escribe tus respuestas abajo.</li>
-                                <li>Presiona <strong>"Copiar Mis Respuestas para Telegram"</strong>.</li>
-                                <li>Abre Telegram y presiona <strong>Pegar (Ctrl + V)</strong> para publicar en el grupo evaluativo.</li>
-                            </ol>
-                        </div>
-
-                        <textarea id="ans-m10-u3" rows="5" placeholder="Escribe tus respuestas detalladas aquí..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-4 text-xs font-mono focus:border-amber-400 focus:outline-none"></textarea>
-                        <button onclick="copiarRespuestas('ans-m10-u3', 'Módulo 10 - Unidad 3')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-3 rounded-xl text-xs transition flex items-center gap-2">
-                            <i class="fas fa-copy"></i> Copiar Mis Respuestas para Telegram
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Sala de Debate U3 -->
-                <div class="mt-8 bg-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800">
-                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
                         <div>
-                            <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
-                                <i class="fas fa-comments"></i> Sala de Debate y Consultas - Unidad 3
-                            </h3>
-                            <p class="text-xs text-slate-400">Debate sobre la rentabilidad del patrimonio y el Modelo DuPont.</p>
+                            <label class="block text-slate-400 mb-1">Multiplicador del Capital (Apalancamiento):</label>
+                            <input type="number" id="input-mult" value="1.581" step="0.01" class="w-full bg-slate-950 border border-slate-700 text-amber-300 p-2.5 rounded-lg font-mono">
                         </div>
-                        <span class="bg-emerald-900/80 text-emerald-300 text-xs px-3 py-1 rounded-full font-bold">Chat de Unidad</span>
                     </div>
-
-                    <div id="comments-list-u3" class="space-y-3 mb-4 max-h-60 overflow-y-auto pr-2"></div>
-
-                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
-                        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 p-2.5 rounded-xl text-xs">
-                            <span class="text-slate-400"><i class="fas fa-user-check text-emerald-400 mr-1"></i> Usuario Autenticado:</span>
-                            <span id="user-badge-u3" class="font-bold text-emerald-300 flex items-center gap-1">
-                                <i class="fas fa-circle-notch fa-spin text-amber-400"></i> Verificando datos de sesión...
-                            </span>
-                        </div>
-                        <textarea id="msg-u3" rows="2" placeholder="Escribe tu mensaje para la clase..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs focus:outline-none focus:border-amber-400"></textarea>
-                        <button onclick="publicarComentario('u3')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-2 transition">
-                            <i class="fas fa-paper-plane"></i> Publicar en la Sala de Debate
-                        </button>
-                    </div>
+                    <button onclick="calcularDuPont()" class="bg-amber-500 hover:bg-amber-600 font-bold text-slate-950 px-4 py-2 rounded-lg text-xs flex items-center gap-2">
+                        <i class="fas fa-play"></i> Calcular Rentabilidad DuPont (ROE)
+                    </button>
+                    <div id="res-dupont" class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-xs"></div>
                 </div>
 
+                <!-- CUESTIONARIO U3 -->
+                <div class="bg-emerald-950 text-white rounded-3xl p-6 shadow-xl space-y-4">
+                    <h3 class="text-lg font-bold text-emerald-300 flex items-center gap-2">
+                        <i class="fas fa-pen-to-square"></i> Cuestionario Evaluativo - Unidad 3
+                    </h3>
+                    <div class="space-y-3 text-xs">
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                            <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded mr-2">Pregunta 3.1</span>
+                            <strong>¿Por qué el ROE (22,70%) es significativamente mayor al ROA (14,36%) en Comercializadora Los Andes? Explique el impacto del apalancamiento.</strong>
+                        </div>
+                    </div>
+                    <textarea id="ans-m10-u3" rows="3" placeholder="Escribe tus respuestas para Telegram..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs font-mono"></textarea>
+                    <button onclick="copiarRespuestas('ans-m10-u3', 'Módulo 10 - Unidad 3')" class="bg-emerald-600 hover:bg-emerald-500 font-bold text-white px-4 py-2.5 rounded-xl text-xs flex items-center gap-2">
+                        <i class="fas fa-copy"></i> Copiar Respuestas para Telegram
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIDAD 4: LABORATATORIO DE PLANIFICACIÓN FINANCIERA ESTRATÉGICA -->
+        <div id="u4" class="tab-content space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div>
+                    <span class="bg-amber-100 text-amber-800 border border-amber-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block"><i class="fas fa-sliders mr-1 text-amber-600"></i> Módulo de Planificación Gerencial</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Laboratorio de Planificación Financiera Estratégica (Caso Los Andes)</h2>
+                    <p class="text-slate-500 text-sm">Simula decisiones gerenciales de cobro, inventarios, deuda y capital para solucionar la falta de efectivo sin destruir la rentabilidad.</p>
+                </div>
+
+                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-6">
+                    <h3 class="text-lg font-bold text-amber-300 flex items-center gap-2">
+                        <i class="fas fa-chess text-xl"></i> Simulador de Decisiones Estratégicas
+                    </h3>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                            <label class="font-bold text-emerald-400 block">1. Política de Cobranza (Descuento Pronto Pago 5%):</label>
+                            <select id="dec-cobro" onchange="simularPlanificacion()" class="w-full bg-slate-900 border border-slate-700 text-white p-2.5 rounded-lg">
+                                <option value="0">Mantener políticas actuales (PMC = 65 Días)</option>
+                                <option value="100000">Recuperar 100.000 BS de Cuentas por Cobrar en 15 días</option>
+                                <option value="180000">Recuperar 180.000 BS de Cuentas por Cobrar en 15 días</option>
+                            </select>
+                        </div>
+
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                            <label class="font-bold text-emerald-400 block">2. Remate de Inventario Estancado (Descuento 10%):</label>
+                            <select id="dec-inv" onchange="simularPlanificacion()" class="w-full bg-slate-900 border border-slate-700 text-white p-2.5 rounded-lg">
+                                <option value="0">Mantener inventario congelado (320.000 BS)</option>
+                                <option value="80000">Liquidar 80.000 BS de inventario a precio promocional</option>
+                                <option value="150000">Liquidar 150.000 BS de inventario a precio promocional</option>
+                            </select>
+                        </div>
+
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                            <label class="font-bold text-emerald-400 block">3. Reestructuración de Deuda Bancaria Corto Plazo:</label>
+                            <select id="dec-deuda" onchange="simularPlanificacion()" class="w-full bg-slate-900 border border-slate-700 text-white p-2.5 rounded-lg">
+                                <option value="0">Mantener deudas a corto plazo (275.000 BS)</option>
+                                <option value="50000">Refinanciar 50.000 BS de préstamos a largo plazo</option>
+                            </select>
+                        </div>
+
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                            <label class="font-bold text-emerald-400 block">4. Aporte de Capital Social en Efectivo por Socios:</label>
+                            <select id="dec-cap" onchange="simularPlanificacion()" class="w-full bg-slate-950 border border-slate-700 text-white p-2.5 rounded-lg">
+                                <option value="0">Sin aporte adicional de capital</option>
+                                <option value="50000">Inyectar 50.000 BS de capital social fresco</option>
+                                <option value="100000">Inyectar 100.000 BS de capital social fresco</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- RESULTADO DEL IMPACTO PLANIFICACIÓN -->
+                    <div class="bg-slate-950 p-5 rounded-2xl border border-amber-500/30 space-y-3">
+                        <h4 class="font-bold text-amber-400 text-sm flex items-center gap-2">
+                            <i class="fas fa-gauge-high"></i> Impacto Estimado en la Tesorería y Solvencia
+                        </h4>
+                        <div id="sim-plan-result" class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -359,45 +348,104 @@
     </footer>
 
     <script>
-        let currentAuthUser = { name: "Estudiante UCSAR", role: "Estudiante", isMaster: false };
-
-        async function initUserProfile() {
-            if (typeof supabaseClient !== 'undefined' && supabaseClient) {
-                try {
-                    const { data: { session } } = await supabaseClient.auth.getSession();
-                    if (session && session.user) {
-                        const email = session.user.email;
-                        const isMaster = (typeof ADMIN_EMAILS !== 'undefined' && ADMIN_EMAILS.includes(email));
-                        const name = session.user.user_metadata?.full_name || session.user.user_metadata?.name || email.split('@')[0];
-                        
-                        currentAuthUser = {
-                            name: isMaster ? (name + " (Facilitador)") : name,
-                            role: isMaster ? "Profesor" : "Estudiante",
-                            isMaster: isMaster,
-                            email: email
-                        };
-                    }
-                } catch (e) {
-                    console.log("Supabase Profile Check:", e);
-                }
-            }
-            actualizarBadgesUsuario();
-        }
-
-        function actualizarBadgesUsuario() {
-            ['u1', 'u2', 'u3'].forEach(u => {
-                const badge = document.getElementById('user-badge-' + u);
-                if (badge) {
-                    badge.innerHTML = `<i class="${currentAuthUser.isMaster ? 'fas fa-user-shield text-amber-400' : 'fas fa-user-graduate text-emerald-400'}"></i> ${currentAuthUser.name} <span class="bg-slate-800 text-slate-400 px-2 py-0.5 rounded font-normal ml-1">${currentAuthUser.role}</span>`;
-                }
-            });
-        }
-
         function switchTab(t) {
             document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
             document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
             document.getElementById(t).classList.add('active');
             document.getElementById('tab-' + t).classList.add('active');
+        }
+
+        function calcularRatiosU1() {
+            const ac = parseFloat(document.getElementById('input-ac').value) || 0;
+            const pc = parseFloat(document.getElementById('input-pc').value) || 1;
+            const inv = parseFloat(document.getElementById('input-inv').value) || 0;
+            const ef = parseFloat(document.getElementById('input-ef').value) || 0;
+
+            const rc = (ac / pc).toFixed(2);
+            const pa = ((ac - inv) / pc).toFixed(2);
+            const li = ((ef / pc) * 100).toFixed(1);
+
+            document.getElementById('res-ratios-u1').innerHTML = `
+                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block text-[11px]">Razón Corriente:</span>
+                    <span class="font-bold text-emerald-400 text-base">${rc}</span>
+                    <span class="block text-[10px] text-slate-500">${rc >= 1.5 ? 'Excelente Cobertura' : 'Riesgo de Cobertura'}</span>
+                </div>
+                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block text-[11px]">Prueba Ácida:</span>
+                    <span class="font-bold ${pa >= 1.0 ? 'text-emerald-400' : 'text-amber-400'} text-base">${pa}</span>
+                    <span class="block text-[10px] text-slate-500">${pa < 1.0 ? 'Déficit sin Inventarios' : 'Adecuado'}</span>
+                </div>
+                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block text-[11px]">Liquidez Inmediata:</span>
+                    <span class="font-bold text-red-400 text-base">${li}%</span>
+                    <span class="block text-[10px] text-slate-500">Iliquidez Crítica en Bancos</span>
+                </div>
+            `;
+        }
+
+        function calcularPuntoEquilibrio() {
+            const cft = parseFloat(document.getElementById('input-cft').value) || 0;
+            const cvt = parseFloat(document.getElementById('input-cvt').value) || 0;
+            const v = parseFloat(document.getElementById('input-ventas').value) || 1;
+            const pvu = parseFloat(document.getElementById('input-pvu').value) || 1;
+
+            const m = (v - cvt) / v;
+            const ve = cft / m;
+            const mcu = pvu * m;
+            const qe = cft / mcu;
+
+            document.getElementById('res-pe').innerHTML = `
+                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block text-[11px]">Ratio Margen Contribución:</span>
+                    <span class="font-bold text-teal-300 text-base">${(m * 100).toFixed(2)}%</span>
+                </div>
+                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block text-[11px]">Punto Equilibrio en BS (Ve):</span>
+                    <span class="font-bold text-teal-300 text-base">${ve.toLocaleString('es-VE', {maximumFractionDigits:2})} BS</span>
+                </div>
+                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block text-[11px]">Punto Equilibrio Unidades (Qe):</span>
+                    <span class="font-bold text-teal-300 text-base">${Math.ceil(qe).toLocaleString('es-VE')} Unidades</span>
+                </div>
+            `;
+        }
+
+        function calcularDuPont() {
+            const mn = parseFloat(document.getElementById('input-mn').value) || 0;
+            const rot = parseFloat(document.getElementById('input-rot').value) || 0;
+            const mult = parseFloat(document.getElementById('input-mult').value) || 0;
+
+            const roe = (mn * rot * mult).toFixed(2);
+
+            document.getElementById('res-dupont').innerHTML = `
+                <p class="font-bold text-amber-300 mb-1">Rentabilidad del Patrimonio (ROE): <span class="text-white text-base">${roe}%</span></p>
+                <p class="text-slate-400 text-[11px]">Descomposición: Margen (${mn}%) × Rotación (${rot}) × Apalancamiento (${mult})</p>
+            `;
+        }
+
+        function simularPlanificacion() {
+            const c_cobro = parseFloat(document.getElementById('dec-cobro').value) || 0;
+            const c_inv = parseFloat(document.getElementById('dec-inv').value) || 0;
+            const c_cap = parseFloat(document.getElementById('dec-cap').value) || 0;
+
+            const cajaInicial = 5000;
+            const nuevaCaja = cajaInicial + c_cobro + c_inv + c_cap;
+
+            document.getElementById('sim-plan-result').innerHTML = `
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block">Efectivo Generado:</span>
+                    <span class="font-bold text-emerald-400 text-sm">+${(c_cobro + c_inv + c_cap).toLocaleString('es-VE')} BS</span>
+                </div>
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block">Nuevo Saldo en Banco:</span>
+                    <span class="font-bold text-amber-300 text-sm">${nuevaCaja.toLocaleString('es-VE')} BS</span>
+                </div>
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                    <span class="text-slate-400 block">Cobertura de Nómina:</span>
+                    <span class="font-bold ${nuevaCaja >= 45000 ? 'text-emerald-400' : 'text-red-400'} text-sm">${nuevaCaja >= 45000 ? 'SOLVENTE (Nómina Pagada)' : 'INSUFICIENTE'}</span>
+                </div>
+            `;
         }
 
         function copiarRespuestas(id, title) {
@@ -408,54 +456,11 @@
             });
         }
 
-        function publicarComentario(unidad) {
-            const msgInput = document.getElementById('msg-' + unidad);
-            const msg = msgInput.value.trim();
-
-            if (!msg) { alert("Escribe un mensaje antes de publicar."); return; }
-
-            const nuevoComentario = {
-                author: currentAuthUser.name,
-                role: currentAuthUser.role,
-                msg: msg,
-                fecha: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-            };
-
-            let comentarios = JSON.parse(localStorage.getItem('m10_chat_' + unidad) || '[]');
-            comentarios.push(nuevoComentario);
-            localStorage.setItem('m10_chat_' + unidad, JSON.stringify(comentarios));
-
-            msgInput.value = '';
-            cargarComentarios(unidad);
-        }
-
-        function cargarComentarios(unidad) {
-            const list = document.getElementById('comments-list-' + unidad);
-            if (!list) return;
-
-            let comentarios = JSON.parse(localStorage.getItem('m10_chat_' + unidad) || '[]');
-            if (comentarios.length === 0) {
-                list.innerHTML = `<p class="text-xs text-slate-500 italic p-3 text-center">Aún no hay mensajes en esta sala. ¡Sé el primero en aportar o preguntar!</p>`;
-                return;
-            }
-
-            list.innerHTML = comentarios.map(c => `
-                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800/80">
-                    <div class="flex justify-between items-center mb-1">
-                        <span class="font-bold text-xs ${c.role === 'Profesor' ? 'text-amber-400' : 'text-emerald-300'}">
-                            <i class="${c.role === 'Profesor' ? 'fas fa-user-shield' : 'fas fa-user-graduate'}"></i> ${c.author} 
-                            <span class="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded ml-1 font-normal">${c.role}</span>
-                        </span>
-                        <span class="text-[10px] text-slate-500">${c.fecha}</span>
-                    </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">${c.msg}</p>
-                </div>
-            `).join('');
-        }
-
         document.addEventListener('DOMContentLoaded', () => {
-            initUserProfile();
-            ['u1', 'u2', 'u3'].forEach(cargarComentarios);
+            calcularRatiosU1();
+            calcularPuntoEquilibrio();
+            calcularDuPont();
+            simularPlanificacion();
         });
     </script>
 </body>
