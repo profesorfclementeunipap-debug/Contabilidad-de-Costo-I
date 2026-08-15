@@ -17,7 +17,7 @@ La literatura financiera moderna (**Brealey, Myers & Allen**, *Corporate Finance
 2. **Análisis Económico (Estado de Resultados Integral):** Examina la rentabilidad operativa, la eficiencia en la generación de ventas, la estructura de costos y el apalancamiento operativo (punto de equilibrio).
 3. **Análisis de Flujos y Rentabilidad (Estado de Flujos de Efectivo, ECPN, ROA/ROE y Modelo DuPont):** Determina la capacidad de generación real de caja limpia, la efectividad en la gestión de activos y el retorno final sobre el capital invertido por los accionistas.
 
-Bajo la normativa **NIIF para las PYMES (Secciones 3, 4, 5, 6, 7 y 11)** y los principios **VEN-NIF (BA VEN-NIF N° 8)**, el análisis contable exige incorporar los efectos del entorno hiperinflacionario o bimonetario mediante la reexpresión de estados financieros y la evaluación en moneda funcional ($BS$ y $USD$).
+Bajo la normativa **NIIF para las PYMES (Secciones 3, 4, 5, 6, 7 y 11)** y los principios **VEN-NIF (BA VEN-NIF N° 8)**, el análisis contable exige incorporar los efectos del entorno hiperinflacionario o bimonetario mediante la reexpresión de estados financieros y la evaluación en moneda funcional (BS y USD).
 
 ---
 
@@ -32,20 +32,24 @@ El análisis del Balance de Situación Financiera busca determinar si la entidad
 ### 1.1 Análisis Vertical (Estructural)
 El análisis vertical calcula la participación relativa porcentual de cada cuenta u homogéneo de masas patrimoniales respecto al total del Activo o del Pasivo + Patrimonio:
 
-$$\text{Porcentaje Vertical (Activo)} = \left( \frac{\text{Valor de la Cuenta}}{\text{Total Activos}} \right) \times 100$$
+* **Porcentaje Vertical (Activos):**  
+  `% Vertical Activo = (Valor de la Cuenta / Total Activos) × 100`
 
-$$\text{Porcentaje Vertical (Pasivo/Patrimonio)} = \left( \frac{\text{Valor de la Cuenta}}{\text{Total Pasivo y Patrimonio}} \right) \times 100$$
+* **Porcentaje Vertical (Pasivo y Patrimonio):**  
+  `% Vertical Pasivo/Patrimonio = (Valor de la Cuenta / Total Pasivo y Patrimonio) × 100`
 
 #### Criterio Doctrinario:
 * **Activo Corriente / Activo Total:** Mide el grado de flexibilidad o liquidez del activo.
 * **Pasivo Total / Activo Total:** Mide el nivel de endeudamiento global de la entidad.
 
 ### 1.2 Análisis Horizontal (Tendencial o Dinámico)
-Mide la variación absoluta ($\Delta$) y relativa ($\%$) de una cuenta o rubro financiero entre dos ejercicios económicos consecutivos ($t_0$ y $t_1$):
+Mide la variación absoluta (Δ) y relativa (%) de una cuenta o rubro financiero entre dos ejercicios económicos consecutivos (Año Anterior t₀ y Año Actual t₁):
 
-$$\text{Variación Absoluta } (\Delta) = \text{Monto}_{t_1} - \text{Monto}_{t_0}$$
+* **Variación Absoluta (Δ Absoluta en Dinero):**  
+  `Δ Absoluta = Monto Año Actual (t₁) - Monto Año Pasado (t₀)`
 
-$$\text{Variación Relativa } (\%) = \left( \frac{\text{Monto}_{t_1} - \text{Monto}_{t_0}}{\text{Monto}_{t_0}} \right) \times 100$$
+* **Variación Relativa (% Δ en Porcentaje):**  
+  `% Δ = [(Monto Año Actual (t₁) - Monto Año Pasado (t₀)) / Monto Año Pasado (t₀)] × 100`
 
 ---
 
@@ -75,7 +79,7 @@ La representación visual de las masas patrimoniales permite constatar de forma 
 
 El **EOAF** (o Cuadro de Financiación) explica los cambios en la posición financiera de la entidad mediante la distinción entre **Orígenes de Fondos (Fuentes)** y **Aplicaciones de Fondos (Usos)**:
 
-| Naturaleza del Movimiento | Aumento de la Cuenta ($+$) | Disminución de la Cuenta ($-$) |
+| Naturaleza del Movimiento | Aumento de la Cuenta (+) | Disminución de la Cuenta (-) |
 | :--- | :--- | :--- |
 | **Cuenta de Activo** | **APLICACIÓN / USO** (Compra de activo, acumulación de inventario) | **ORIGEN / FUENTE** (Venta de activo, cobro a clientes) |
 | **Cuenta de Pasivo** | **ORIGEN / FUENTE** (Obtención de crédito, emisión de deuda) | **APLICACIÓN / USO** (Pago de deudas, amortización) |
@@ -87,22 +91,22 @@ El **EOAF** (o Cuadro de Financiación) explica los cambios en la posición fina
 
 El Estado de Flujos de Efectivo clasifica todas las entradas y salidas reales de efectivo y equivalentes en **tres actividades operativas fundamentales**:
 
-```mermaid
-graph TD
-    EFE[Estado de Flujos de Efectivo - Sección 7] --> O[1. Actividades de Operación]
-    EFE --> I[2. Actividades de Inversión]
-    EFE --> F[3. Actividades de Financiamiento]
-
-    O --> O1[Cobros a clientes, pagos a proveedores, sueldos e impuestos]
-    I --> I1[Compra/venta de Propiedades, Planta y Equipo, e Intangibles]
-    F --> F1[Préstamos bancarios, aportes de socios, pago de dividendos]
+```text
+========================================================================
+           ESTADO DE FLUJOS DE EFECTIVO (SECCIÓN 7 NIIF PYME)
+========================================================================
+1. ACTIVIDADES DE OPERACIÓN:
+   - Cobros a clientes, pagos a proveedores, sueldos e impuestos.
+2. ACTIVIDADES DE INVERSIÓN:
+   - Compra y venta de Propiedades, Planta y Equipo e Intangibles.
+3. ACTIVIDADES DE FINANCIAMIENTO:
+   - Préstamos bancarios, aportes de socios y pago de dividendos.
+========================================================================
 ```
 
 ### Métodos de Presentación del Flujo de Operación:
-1. **Método Directo:** Presenta las clases principales de cobros y pagos brutos en efectivo (Cobros a clientes $-$ Pagos a proveedores y personal).
-2. **Método Indirecto:** Parte de la Utilidad/Pérdida Neta del ejercicio y la ajusta por:
-   * Partidas no monetarias (Depreciaciones, Amortizaciones, Deterioro).
-   * Variaciones en el Capital de Trabajo ($\Delta$ Cuentas por Cobrar, $\Delta$ Inventarios, $\Delta$ Cuentas por Pagar).
+1. **Método Directo:** Presenta las clases principales de cobros y pagos brutos en efectivo (Cobros a clientes - Pagos a proveedores y personal).
+2. **Método Indirecto:** Parte de la Utilidad/Pérdida Neta del ejercicio y la ajusta por partidas no monetarias (depreciaciones) y cambios en el Capital de Trabajo (cuentas por cobrar, inventarios, proveedores).
 
 ---
 
@@ -124,33 +128,33 @@ Los ratios son coeficientes matemáticos que relacionan dos partidas de los esta
 
 | Ratio | Fórmula de Cálculo | Valor Ideal / Interpretación |
 | :--- | :--- | :--- |
-| **Razón Corriente (Liquidez General)** | $RC = \frac{\text{Activo Corriente}}{\text{Pasivo Corriente}}$ | **$1,50 - 2,50$**: Indica que la empresa posee entre $1,50$ y $2,50\text{ BS}$ de activo circulante por cada $1,00\text{ BS}$ de deuda exigible a corto plazo. |
-| **Prueba Ácida (Liquidez Severa)** | $PA = \frac{\text{Activo Corriente} - \text{Inventarios}}{\text{Pasivo Corriente}}$ | **$1,00 - 1,50$**: Mide la capacidad de respuesta inmediata sin depender de la venta tardía de inventarios. |
-| **Liquidez Inmediata (Efectivo)** | $LI = \frac{\text{Efectivo y Equivalentes}}{\text{Pasivo Corriente}}$ | **$0,30 - 0,50$**: Mide la tesorería instantánea disponible en bancos y caja. |
+| **Razón Corriente (Liquidez General)** | `RC = Activo Corriente / Pasivo Corriente` | **1,50 - 2,50**: Indica que la empresa posee entre 1,50 y 2,50 BS de activo circulante por cada 1,00 BS de deuda exigible a corto plazo. |
+| **Prueba Ácida (Liquidez Severa)** | `PA = (Activo Corriente - Inventarios) / Pasivo Corriente` | **1,00 - 1,50**: Mide la capacidad de respuesta inmediata sin depender de la venta tardía de inventarios. |
+| **Liquidez Inmediata (Efectivo)** | `LI = Efectivo y Equivalentes / Pasivo Corriente` | **0,30 - 0,50**: Mide la tesorería instantánea disponible en bancos y caja. |
 
 ### B) Ratios de Endeudamiento y Solvencia
 
 | Ratio | Fórmula de Cálculo | Interpretación Doctrinal |
 | :--- | :--- | :--- |
-| **Ratio de Endeudamiento Total** | $ET = \frac{\text{Pasivo Total}}{\text{Activo Total}}$ | Mide el porcentaje de los activos financiados por acreedores externos. Ideal $\le 60\%$. |
-| **Apalancamiento Financiero** | $AP = \frac{\text{Pasivo Total}}{\text{Patrimonio Neto}}$ | Mide la proporción de capital ajeno frente al capital propio de los socios. |
-| **Autonomía Financiera** | $AF = \frac{\text{Patrimonio Neto}}{\text{Activo Total}}$ | Indica qué porcentaje de los activos pertenece realmente a los accionistas. |
+| **Ratio de Endeudamiento Total** | `ET = (Pasivo Total / Activo Total) × 100` | Mide el porcentaje de los activos financiados por acreedores externos. Ideal ≤ 60%. |
+| **Apalancamiento Financiero** | `AP = Pasivo Total / Patrimonio Neto` | Mide la proporción de capital ajeno frente al capital propio de los socios. |
+| **Autonomía Financiera** | `AF = Patrimonio Neto / Activo Total` | Indica qué porcentaje de los activos pertenece realmente a los accionistas. |
 
 ### C) Ratios de Cobro, Pago y Rotación
 
-1. **Rotación de Inventarios:**
-   $$\text{Rotación de Inventarios} = \frac{\text{Costo de Ventas}}{\text{Inventario Promedio}}$$
+1. **Rotación de Inventarios:**  
+   `Rotación de Inventarios = Costo de Ventas / Inventario Promedio`
 
-2. **Días Promedio de Inventario (DPI):**
-   $$\text{DPI} = \frac{365}{\text{Rotación de Inventarios}}$$
+2. **Días Promedio de Inventario (DPI):**  
+   `DPI = 365 / Rotación de Inventarios`
 
-3. **Período Medio de Cobro (PMC / Días de Venta en la Calle):**
-   $$\text{PMC} = \left( \frac{\text{Cuentas por Cobrar Promedio}}{\text{Ventas a Crédito Totales}} \right) \times 365$$
+3. **Período Medio de Cobro (PMC / Días de Venta en la Calle):**  
+   `PMC = (Cuentas por Cobrar Promedio / Ventas a Crédito Totales) × 365`
 
-4. **Período Medio de Pago (PMP / Días de Crédito con Proveedores):**
-   $$\text{PMP} = \left( \frac{\text{Cuentas por Pagar Promedio}}{\text{Compras a Crédito Totales}} \right) \times 365$$
+4. **Período Medio de Pago (PMP / Días de Crédito con Proveedores):**  
+   `PMP = (Cuentas por Pagar Promedio / Compras a Crédito Totales) × 365`
 
-* **Regla de Oro de Gestión Financiera:** El periodo de cobro debe ser menor al periodo de pago ($\text{PMC} < \text{PMP}$) para evitar déficit de tesorería y necesidad de financiamiento costoso.
+* **Regla de Oro de Gestión Financiera:** El periodo de cobro debe ser menor al periodo de pago (`PMC < PMP`) para evitar déficit de tesorería y necesidad de financiamiento costoso.
 
 ---
 
@@ -162,7 +166,7 @@ El análisis económico evalúa la estructura de ingresos, costos y gastos de la
 
 ## 1. CÁLCULO DE PORCENTAJES Y ESTRUCTURA DE LA CUENTA DE RESULTADOS
 
-El análisis vertical en la cuenta de resultados toma como base de referencia ($100\%$) a los **Ingresos Netos por Ventas**:
+El análisis vertical en la cuenta de resultados toma como base de referencia (100%) a los **Ingresos Netos por Ventas**:
 
 ```text
 ========================================================================
@@ -196,12 +200,14 @@ La representación en gráfico de cascada visualiza cómo cada nivel de costo ab
 
 Mide la tasa de crecimiento nominal e interanual de los ingresos operacionales entre dos o más periodos:
 
-$$\text{Tasa de Crecimiento de Ventas } (\%) = \left( \frac{\text{Ventas}_{t_1} - \text{Ventas}_{t_0}}{\text{Ventas}_{t_0}} \right) \times 100$$
+* **Tasa de Crecimiento de Ventas (%):**  
+  `% Crecimiento Ventas = [(Ventas Año Actual (t₁) - Ventas Año Pasado (t₀)) / Ventas Año Pasado (t₀)] × 100`
 
 ### Ajuste por Inflación (VEN-NIF / BA VEN-NIF N° 8):
 En entornos con inflación significante, el crecimiento nominal debe deflactarse utilizando el **Índice Nacional de Precios al Consumidor (INPC)** para determinar el Crecimiento Real en Volumen de Ventas:
 
-$$\text{Ventas Reales (Deflactadas)} = \frac{\text{Ventas Nominales}}{\text{INPC}_{t_1} / \text{INPC}_{t_0}}$$
+* **Ventas Reales (Deflactadas):**  
+  `Ventas Reales = Ventas Nominales / (INPC Año Actual / INPC Año Pasado)`
 
 ---
 
@@ -209,10 +215,10 @@ $$\text{Ventas Reales (Deflactadas)} = \frac{\text{Ventas Nominales}}{\text{INPC
 
 Es una herramienta docente de análisis horizontal que desglosa cómo se distribuyen exactamente cada 100 Bolívares o Dólares facturados:
 
-$$\text{UM al Costo de Ventas} = \% \text{ Costo de Ventas} \times 100$$
-$$\text{UM a Gastos Operativos} = \% \text{ Gastos Operativos} \times 100$$
-$$\text{UM a Gastos Financieros e Impuestos} = \% \text{ Financieros e ISLR} \times 100$$
-$$\text{UM a Utilidad Neta} = \% \text{ Utilidad Neta} \times 100$$
+* `UM a Costo de Ventas = % Costo de Ventas × 100`
+* `UM a Gastos Operativos = % Gastos Operativos × 100`
+* `UM a Gastos Financieros e Impuestos = % Financieros e ISLR × 100`
+* `UM a Utilidad Neta = % Utilidad Neta × 100`
 
 ---
 
@@ -225,27 +231,31 @@ $$\text{UM a Utilidad Neta} = \% \text{ Utilidad Neta} \times 100$$
 ### 5.2 Grado de Apalancamiento Operativo (GAO):
 Mide el impacto porcentual en la utilidad operativa (EBIT) ante un cambio en las ventas:
 
-$$\text{GAO} = \frac{\text{Porcentaje Cambio en EBIT}}{\text{Porcentaje Cambio en Ventas}} = \frac{Q \times (\text{PVU} - \text{CVU})}{Q \times (\text{PVU} - \text{CVU}) - \text{CFT}}$$
+* **Fórmula del GAO:**  
+  `GAO = % Cambio en EBIT / % Cambio en Ventas`  
+  `GAO = [Cantidad × (Precio Unitario - Costo Variable Unitario)] / [Cantidad × (Precio Unitario - Costo Variable Unitario) - Costos Fijos Totales]`
 
 ---
 
 ## 6. PUNTO DE EQUILIBRIO OPERATIVO (BREAK-EVEN POINT)
 
-El Punto de Equilibrio es el nivel de ventas (en unidades físicas o bolívares) en el cual los ingresos totales igualan exactamente a los costos totales, obteniendo una Utilidad Operativa igual a cero ($\text{EBIT} = 0$).
+El Punto de Equilibrio es el nivel de ventas (en unidades físicas o bolívares) en el cual los ingresos totales igualan exactamente a los costos totales, obteniendo una Utilidad Operativa igual a cero (EBIT = 0).
 
 ### 6.1 Margen de Contribución Unitario (MCU):
-$$\text{MCU} = \text{PVU} - \text{CVU}$$
+`MCU = Precio de Venta Unitario (PVU) - Costo Variable Unitario (CVU)`
 
-### 6.2 Ratio de Margen de Contribución ($m$):
-$$m = \frac{\text{MCU}}{\text{PVU}} = \frac{\text{PVU} - \text{CVU}}{\text{PVU}}$$
+### 6.2 Ratio de Margen de Contribución (m):
+`m = MCU / PVU = (PVU - CVU) / PVU`
 
 ### 6.3 Fórmulas del Punto de Equilibrio:
 
-1. **Punto de Equilibrio en Unidades físicas ($Q_e$):**
-   $$Q_e = \frac{\text{Costos Fijos Totales (CFT)}}{\text{Margen de Contribución Unitario (MCU)}} = \frac{\text{CFT}}{\text{PVU} - \text{CVU}}$$
+1. **Punto de Equilibrio en Unidades Físicas (Qe):**  
+   `Qe = Costos Fijos Totales (CFT) / Margen de Contribución Unitario (MCU)`  
+   `Qe = CFT / (PVU - CVU)`
 
-2. **Punto de Equilibrio en Monto Monetario ($V_e$):**
-   $$V_e = \frac{\text{Costos Fijos Totales (CFT)}}{m} = Q_e \times \text{PVU}$$
+2. **Punto de Equilibrio en Monto Monetario (Ve):**  
+   `Ve = Costos Fijos Totales (CFT) / Ratio Margen de Contribución (m)`  
+   `Ve = Qe × Precio de Venta Unitario (PVU)`
 
 ---
 
@@ -260,9 +270,8 @@ La rentabilidad mide la capacidad de la entidad para generar beneficios en relac
 ### 1.1 Definición e Interpretación
 El **ROA** (también conocido como *Rentabilidad Económica* o *ROI*) mide la eficiencia operativa con la que la gerencia utiliza el **conjunto total de activos** de la empresa para generar utilidades, independientemente de cómo hayan sido financiados (deuda o capital propio).
 
-$$\text{ROA} = \frac{\text{Utilidad Neta}}{\text{Activo Total Promedio}}$$
-
-*(En análisis puro operativo se utiliza el EBIT en el numerador: $\text{ROA Operativo} = \frac{\text{EBIT}}{\text{Activo Total}}$).*
+* **Fórmula ROA:**  
+  `ROA = Utilidad Neta / Activo Total Promedio`
 
 ---
 
@@ -271,7 +280,8 @@ $$\text{ROA} = \frac{\text{Utilidad Neta}}{\text{Activo Total Promedio}}$$
 ### 2.1 Definición e Interpretación
 El **ROE** (o *Rentabilidad Financiera*) mide la tasa de retorno o ganancia neta generada exclusivamente sobre la **inversión de los accionistas o propietarios** de la entidad.
 
-$$\text{ROE} = \frac{\text{Utilidad Neta}}{\text{Patrimonio Neto Promedio}}$$
+* **Fórmula ROE:**  
+  `ROE = Utilidad Neta / Patrimonio Neto Promedio`
 
 ---
 
@@ -279,34 +289,34 @@ $$\text{ROE} = \frac{\text{Utilidad Neta}}{\text{Patrimonio Neto Promedio}}$$
 
 El Modelo DuPont descompone el ROE en tres palancas financieras fundamentales: **Margen de Utilidad, Rotación de Activos y Apalancamiento Financiero**:
 
-$$\text{ROE} = \left( \frac{\text{Utilidad Neta}}{\text{Ventas}} \right) \times \left( \frac{\text{Ventas}}{\text{Activo Total}} \right) \times \left( \frac{\text{Activo Total}}{\text{Patrimonio Neto}} \right)$$
+* **Fórmula del Modelo DuPont:**  
+  `ROE = (Utilidad Neta / Ventas) × (Ventas / Activo Total) × (Activo Total / Patrimonio Neto)`  
+  `ROE = Margen Neto × Rotación de Activos × Multiplicador del Capital (Apalancamiento)`
 
-$$\mathbf{\text{ROE}} = \mathbf{\text{Margen Neta}} \times \mathbf{\text{Rotación de Activos}} \times \mathbf{\text{Multiplicador del Capital (Apalancamiento)}}$$
-
-```mermaid
-graph LR
-    ROE[ROE: Rentabilidad del Patrimonio] --> M[Margen Neta: Utilidad / Ventas]
-    ROE --> R[Rotación Activos: Ventas / Activo Total]
-    ROE --> A[Multiplicador Capital: Activo Total / Patrimonio]
-
-    M --> Ef1[Eficiencia Operativa en Costos]
-    R --> Ef2[Eficiencia en la Gestión de Activos]
-    A --> Ef3[Estructura y Gestión del Apalancamiento]
+```text
+========================================================================
+                 DESCOMPOSICIÓN DEL MODELO DUPONT
+========================================================================
+ROE (Rentabilidad del Patrimonio)
+  ├── 1. Margen Neto (Utilidad Neta / Ventas) -> Eficiencia en Costos
+  ├── 2. Rotación Activos (Ventas / Activo Total) -> Eficiencia Operativa
+  └── 3. Multiplicador Capital (Activo / Patrimonio) -> Apalancamiento
+========================================================================
 ```
 
 ---
 
 # CUADRO SÍNTESIS COMPARATIVO DE RATIOS E INDICADORES CLAVE
 
-| Indicador Financiero | Fórmula | Valor Objetivo | Dimensión de Evaluación |
+| Indicador Financiero | Fórmula Limpia | Valor Objetivo | Dimensión de Evaluación |
 | :--- | :--- | :--- | :--- |
-| **Razón Corriente** | $\frac{\text{Activo Corriente}}{\text{Pasivo Corriente}}$ | $1,50 - 2,50$ | Liquidez General a Corto Plazo |
-| **Prueba Ácida** | $\frac{\text{Activo Corriente} - \text{Inventario}}{\text{Pasivo Corriente}}$ | $1,00 - 1,50$ | Liquidez Severa Inmediata |
-| **Ratio de Endeudamiento** | $\frac{\text{Pasivo Total}}{\text{Activo Total}}$ | $\le 60\%$ | Solvencia y Estructura de Capital |
-| **Período Medio de Cobro (PMC)**| $\left( \frac{\text{Cuentas x Cobrar}}{\text{Ventas Crédito}} \right) \times 365$ | $< \text{PMP}$ | Eficiencia de Cobranza |
-| **Punto de Equilibrio ($Q_e$)** | $\frac{\text{CFT}}{\text{PVU} - \text{CVU}}$ | Cobertura $100\%$ Costos | Umbral de Operación Sin Pérdidas |
-| **ROA (Return on Assets)** | $\frac{\text{Utilidad Neta}}{\text{Activo Total}}$ | $> 10\%$ | Eficiencia de la Inversión en Activos |
-| **ROE (Return on Equity)** | $\frac{\text{Utilidad Neta}}{\text{Patrimonio Neto}}$ | $> \text{Costo de Capital (WACC)}$ | Rendimiento para los Accionistas |
+| **Razón Corriente** | `Activo Corriente / Pasivo Corriente` | 1,50 - 2,50 | Liquidez General a Corto Plazo |
+| **Prueba Ácida** | `(Activo Corriente - Inventario) / Pasivo Corriente` | 1,00 - 1,50 | Liquidez Severa Inmediata |
+| **Ratio de Endeudamiento** | `(Pasivo Total / Activo Total) × 100` | ≤ 60% | Solvencia y Estructura de Capital |
+| **Período Medio de Cobro (PMC)**| `(Cuentas x Cobrar / Ventas Crédito) × 365` | < PMP | Eficiencia de Cobranza |
+| **Punto de Equilibrio (Qe)** | `CFT / (PVU - CVU)` | Cobertura 100% Costos | Umbral de Operación Sin Pérdidas |
+| **ROA (Return on Assets)** | `Utilidad Neta / Activo Total` | > 10% | Eficiencia de la Inversión en Activos |
+| **ROE (Return on Equity)** | `Utilidad Neta / Patrimonio Neto` | > Costo Capital (WACC) | Rendimiento para los Accionistas |
 
 ---
 
