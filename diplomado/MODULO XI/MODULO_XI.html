@@ -34,7 +34,7 @@
                     </div>
                     <div>
                         <span class="font-bold text-lg text-white block leading-tight">UCSAR Portal Académico</span>
-                        <span class="text-xs text-amber-300 font-medium">Diplomado en Contabilidad Financiera • Jornada Final (Turno Mañana)</span>
+                        <span class="text-xs text-amber-300 font-medium">Diplomado en Contabilidad Financiera • Módulo XI Actualizado</span>
                     </div>
                 </div>
                 <a href="../index.html" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-semibold transition border border-slate-700 hover:bg-slate-800 flex items-center gap-2">
@@ -48,15 +48,15 @@
     <header class="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white py-10 px-4 shadow-xl">
         <div class="max-w-7xl mx-auto">
             <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/30 px-3.5 py-1 rounded-full text-amber-300 text-xs font-bold uppercase mb-4">
-                <i class="fas fa-calendar-check text-amber-400"></i> Turno Mañana (9:00 AM - 12:00 PM) • Módulo XI
+                <i class="fas fa-certificate text-amber-400"></i> Edición Oficial Cierre • MSc. Frank Clemente
             </div>
             <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-3">MÓDULO 11: APLICACIONES INFORMÁTICAS DE CONTABILIDAD</h1>
             <p class="text-slate-300 text-base sm:text-lg max-w-3xl mb-6">
-                Estructura de programas contables, alta y parametrización de empresas en software, árbol de cuentas contables y políticas de seguridad y respaldos (Regla 3-2-1).
+                Sistemas de Información Gerencial (SIG/ERP), comparativa de software (Galac, Alegra, a2, Odoo), alta de empresas con ejercicios irregulares SENIAT, árbol de cuentas a 5 niveles y ciberseguridad avanzada Regla 3-2-1-1-0.
             </p>
             
             <!-- DESCARGAS DE MATERIALES -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-slate-900/90 border border-amber-500/30 rounded-2xl p-4 backdrop-blur-md">
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 bg-slate-900/90 border border-amber-500/30 rounded-2xl p-4 backdrop-blur-md">
                 <a href="Trabajo_Academico_Modulo_XI_Aplicaciones_Informaticas.pdf" target="_blank" class="bg-red-600/90 hover:bg-red-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
                     <i class="fas fa-file-pdf text-xl text-red-300"></i>
                     <div>
@@ -64,18 +64,25 @@
                         <span class="text-[10px] text-red-200 font-normal">Módulo 11 Completo</span>
                     </div>
                 </a>
+                <a href="Trabajo_Academico_Modulo_XI_Aplicaciones_Informaticas.docx" download class="bg-blue-600/90 hover:bg-blue-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
+                    <i class="fas fa-file-word text-xl text-blue-300"></i>
+                    <div>
+                        <span class="block">Tratado Editable (Word)</span>
+                        <span class="text-[10px] text-blue-200 font-normal">Documento Docx</span>
+                    </div>
+                </a>
                 <a href="Caso_Practico_Modulo_XI_Configuracion_Empresa_y_Plan_Cuentas.xlsx" download class="bg-emerald-600/90 hover:bg-emerald-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
                     <i class="fas fa-file-excel text-xl text-emerald-300"></i>
                     <div>
-                        <span class="block">Alta de Empresa (Excel)</span>
-                        <span class="text-[10px] text-emerald-200 font-normal">Parametrización & Cuentas</span>
+                        <span class="block">Alta & Cuentas (Excel)</span>
+                        <span class="text-[10px] text-emerald-200 font-normal">Planilla de Trabajo .XLSX</span>
                     </div>
                 </a>
-                <a href="infografia_modulo11_regla321_seguridad.png" target="_blank" class="bg-amber-600/90 hover:bg-amber-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
-                    <i class="fas fa-shield-halved text-xl text-amber-200"></i>
+                <a href="portada_oficial_modulo11.png" target="_blank" class="bg-amber-600/90 hover:bg-amber-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
+                    <i class="fas fa-image text-xl text-amber-200"></i>
                     <div>
-                        <span class="block">Infografía Respaldos 3-2-1</span>
-                        <span class="text-[10px] text-amber-100 font-normal">Seguridad Contable</span>
+                        <span class="block">Portada Oficial 16:9</span>
+                        <span class="text-[10px] text-amber-100 font-normal">Banner en HD</span>
                     </div>
                 </a>
             </div>
@@ -88,131 +95,141 @@
         <!-- NAVEGACIÓN POR PESTAÑAS -->
         <div class="bg-white p-2 rounded-2xl shadow-sm border border-slate-200 mb-8 overflow-x-auto">
             <div class="flex space-x-2 min-w-max">
-                <button onclick="switchTab('u1')" id="tab-u1" class="tab-button active px-5 py-3 rounded-xl font-bold text-sm">U1. Estructura Software</button>
-                <button onclick="switchTab('u2')" id="tab-u2" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U2. Alta de Empresa</button>
-                <button onclick="switchTab('u3')" id="tab-u3" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U3. Árbol de Cuentas</button>
-                <button onclick="switchTab('u4')" id="tab-u4" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U4. Respaldos Regla 3-2-1</button>
+                <button onclick="switchTab('u1')" id="tab-u1" class="tab-button active px-5 py-3 rounded-xl font-bold text-sm">U1. Estructura & ERP Multi-Sucursal</button>
+                <button onclick="switchTab('u2')" id="tab-u2" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U2. Alta & Ejercicios Irregulares SENIAT</button>
+                <button onclick="switchTab('u3')" id="tab-u3" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U3. Árbol de Cuentas (5 Niveles)</button>
+                <button onclick="switchTab('u4')" id="tab-u4" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U4. Ciberseguridad & Regla 3-2-1-1-0</button>
             </div>
         </div>
 
-        <!-- UNIDAD 1: ESTRUCTURA DE PROGRAMAS CONTABLES -->
+        <!-- UNIDAD 1: ESTRUCTURA Y SOFTWARE -->
         <div id="u1" class="tab-content active space-y-6">
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900">Unidad 1: Estructura de los Programas Contables y Tipos de Software</h2>
-                    <p class="text-slate-500 text-sm">Funcionalidades de los ERPs, software contable On-Premise vs. Cloud SaaS y criterios de selección técnica.</p>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                    <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-3">
-                        <span class="bg-amber-500 text-slate-950 font-bold px-2.5 py-0.5 rounded uppercase">On-Premise (Escritorio)</span>
-                        <h3 class="font-bold text-base text-amber-300">Software en Servidor Local</h3>
-                        <p class="text-slate-300">Ejemplos: Galac, Profit Plus, Saint, SIGESP.</p>
-                        <p class="text-slate-400">Instalación local, control físico directo de bases de datos, pero requiere infraestructura y servidores propios.</p>
+                <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Unidad 1: Estructura de los Programas Contables y Sistemas SIG/ERP</h2>
+                        <p class="text-slate-500 text-sm">Análisis comparativo entre Galac, Alegra, a2 Contabilidad y Odoo para 6.000 SKUs y multi-sucursales.</p>
                     </div>
-                    <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-3">
-                        <span class="bg-sky-500 text-slate-950 font-bold px-2.5 py-0.5 rounded uppercase">Cloud SaaS (Nube)</span>
-                        <h3 class="font-bold text-base text-sky-300">Software Contable en Nube</h3>
-                        <p class="text-slate-300">Ejemplos: Alegra, QuickBooks, Xero, Odoo Cloud.</p>
-                        <p class="text-slate-400">Acceso remoto 24/7 desde cualquier dispositivo, respaldos automáticos, ideal para trabajo híbrido.</p>
-                    </div>
+                    <a href="infografia_modulo11_unidad1_estructura_software.png" target="_blank" class="text-amber-600 font-bold text-xs bg-amber-50 hover:bg-amber-100 border border-amber-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
+                        <i class="fas fa-expand"></i> Ver Infografía U1
+                    </a>
                 </div>
 
-                <!-- CUESTIONARIO U1 -->
-                <div class="bg-amber-950 text-white rounded-3xl p-6 shadow-xl space-y-4">
-                    <h3 class="text-lg font-bold text-amber-300 flex items-center gap-2">
-                        <i class="fas fa-pen-to-square"></i> Cuestionario Evaluativo - Unidad 1
-                    </h3>
-                    <div class="space-y-3 text-xs">
-                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
-                            <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded mr-2">Pregunta 1.1</span>
-                            <strong>¿Cuáles son los 3 factores críticos a considerar al seleccionar un programa contable para una empresa en Venezuela?</strong>
-                        </div>
-                    </div>
-                    <textarea id="ans-m11-u1" rows="3" placeholder="Escribe tus respuestas para Telegram..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs font-mono"></textarea>
-                    <button onclick="copiarRespuestas('ans-m11-u1', 'Módulo 11 - Unidad 1')" class="bg-amber-600 hover:bg-amber-500 font-bold text-white px-4 py-2.5 rounded-xl text-xs flex items-center gap-2">
-                        <i class="fas fa-copy"></i> Copiar Respuestas para Telegram
-                    </button>
-                </div>
-            </div>
-        </div>
+                <img src="infografia_modulo11_unidad1_estructura_software.png" alt="Infografía Unidad 1" class="w-full rounded-2xl border border-slate-200 shadow-sm">
 
-        <!-- UNIDAD 2: ALTA DE EMPRESA SIMULADOR -->
-        <div id="u2" class="tab-content space-y-6">
-            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900">Unidad 2: Alta y Parametrización de Empresas en Software</h2>
-                    <p class="text-slate-500 text-sm">Simulador interactivo de creación de empresa, datos fiscales SENIAT y ejercicio económico.</p>
-                </div>
-
-                <!-- SIMULADOR INTERACTIVO ALTA DE EMPRESA -->
-                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-4">
-                    <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
-                        <i class="fas fa-building"></i> Simulador de Parametrización de Alta de Empresa
-                    </h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                        <div>
-                            <label class="block text-slate-400 mb-1">Razón Social:</label>
-                            <input type="text" id="alta-nombre" value="Corporación TecnoSur, C.A." class="w-full bg-slate-950 border border-slate-700 text-amber-300 p-2.5 rounded-lg">
-                        </div>
-                        <div>
-                            <label class="block text-slate-400 mb-1">R.I.F. SENIAT:</label>
-                            <input type="text" id="alta-rif" value="J-40987654-3" class="w-full bg-slate-950 border border-slate-700 text-amber-300 p-2.5 rounded-lg">
-                        </div>
-                        <div>
-                            <label class="block text-slate-400 mb-1">Alícuota IVA %:</label>
-                            <input type="number" id="alta-iva" value="16.00" class="w-full bg-slate-950 border border-slate-700 text-amber-300 p-2.5 rounded-lg">
-                        </div>
-                    </div>
-                    <button onclick="simularAltaEmpresa()" class="bg-amber-500 hover:bg-amber-600 font-bold text-slate-950 px-4 py-2 rounded-lg text-xs flex items-center gap-2">
-                        <i class="fas fa-check-double"></i> Validar Parametrización de Empresa
-                    </button>
-                    <div id="res-alta-empresa" class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-xs"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- UNIDAD 3: ÁRBOLES DE CUENTAS -->
-        <div id="u3" class="tab-content space-y-6">
-            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900">Unidad 3: Gestión de Cuentas Contables y Plan Codificado</h2>
-                    <p class="text-slate-500 text-sm">Jerarquía de 5 niveles del Plan de Cuentas en aplicaciones informáticas.</p>
-                </div>
-
-                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-3 font-mono text-xs">
-                    <p class="text-emerald-400 font-bold">1.0.00.00.000 - ACTIVO (Nivel 1 - Título)</p>
-                    <p class="text-emerald-300 pl-4">1.1.00.00.000 - ACTIVO CORRIENTE (Nivel 2 - Sub-Título)</p>
-                    <p class="text-emerald-200 pl-8">1.1.01.00.000 - EFECTIVO Y EQUIVALENTES (Nivel 3 - Rubro)</p>
-                    <p class="text-slate-300 pl-12">1.1.01.02.000 - Bancos Nacionales (Nivel 4 - Mayor)</p>
-                    <p class="text-amber-300 pl-16 font-bold">1.1.01.02.001 - Banco Mercantil Cta Cte 0105-... (Nivel 5 - Registro Detalle)</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- UNIDAD 4: RESPALDOS REGLA 3-2-1 -->
-        <div id="u4" class="tab-content space-y-6">
-            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900">Unidad 4: Implementación y Seguridad de Copias de Respaldo (Regla 3-2-1)</h2>
-                    <p class="text-slate-500 text-sm">Protocolo internacional de preservación de bases de datos contables.</p>
-                </div>
-
+                <!-- COMPARATIVA DE SOFTWARE CONTABLE -->
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
                     <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-2">
-                        <span class="text-3xl font-extrabold text-amber-400 block">3</span>
-                        <h4 class="font-bold text-sm text-white">Copias de los Datos</h4>
-                        <p class="text-slate-400">1 copia de producción activa + 2 copias de respaldo de seguridad contable.</p>
+                        <span class="bg-amber-500 text-slate-950 font-bold px-2.5 py-0.5 rounded uppercase">Galac / a2 Contabilidad</span>
+                        <h3 class="font-bold text-base text-amber-300">Software On-Premise (Local)</h3>
+                        <p class="text-slate-300">Líderes en Venezuela para el control estricto de Libros de Compras/Ventas SENIAT e impresoras fiscales.</p>
                     </div>
                     <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-2">
-                        <span class="text-3xl font-extrabold text-amber-400 block">2</span>
-                        <h4 class="font-bold text-sm text-white">Medios Distintos</h4>
-                        <p class="text-slate-400">Guardar en al menos 2 soportes físicos separados (Disco duro local + Servidor NAS / Pendrive encritado).</p>
+                        <span class="bg-sky-500 text-slate-950 font-bold px-2.5 py-0.5 rounded uppercase">Alegra / QuickBooks</span>
+                        <h3 class="font-bold text-base text-sky-300">Software Cloud (SaaS 24/7)</h3>
+                        <p class="text-slate-300">Acceso multi-dispositivo con respaldos automáticos en la nube y actualización tributaria inmediata.</p>
                     </div>
                     <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-2">
-                        <span class="text-3xl font-extrabold text-amber-400 block">1</span>
-                        <h4 class="font-bold text-sm text-white">Copia Offsite (Nube)</h4>
-                        <p class="text-slate-400">Mantener 1 copia fuera de las instalaciones físicas (nube encriptada de respaldo remoto).</p>
+                        <span class="bg-emerald-500 text-slate-950 font-bold px-2.5 py-0.5 rounded uppercase">Odoo ERP</span>
+                        <h3 class="font-bold text-base text-emerald-300">Arquitectura Multi-Sucursal (6.000 SKUs)</h3>
+                        <p class="text-slate-300">Manejo Multi-Almacén en tiempo real, trazabilidad de stock entre tiendas y sucursales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIDAD 2: ALTA DE EMPRESA Y EJERCICIO IRREGULAR -->
+        <div id="u2" class="tab-content space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Unidad 2: Alta de Empresas y Parametrización de Ejercicios Irregulares SENIAT</h2>
+                        <p class="text-slate-500 text-sm">Parametrización de RIF, Moneda Funcional Bolívares (BS), Ejercicios Fraccionados y Asiento de Saldos de Corte (Go-Live).</p>
+                    </div>
+                    <a href="infografia_modulo11_unidad2_alta_empresa.png" target="_blank" class="text-amber-600 font-bold text-xs bg-amber-50 hover:bg-amber-100 border border-amber-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
+                        <i class="fas fa-expand"></i> Ver Infografía U2
+                    </a>
+                </div>
+
+                <img src="infografia_modulo11_unidad2_alta_empresa.png" alt="Infografía Unidad 2" class="w-full rounded-2xl border border-slate-200 shadow-sm">
+
+                <!-- CASOS PRÁCTICOS DE ALTA -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                    <div class="bg-amber-950 text-white p-5 rounded-2xl border border-amber-800 space-y-2">
+                        <h3 class="font-bold text-base text-amber-300"><i class="fas fa-gavel mr-1"></i> Ejercicio Irregular (Constitución a mitad de año)</h3>
+                        <p class="text-slate-200">Si una empresa inicia operaciones el 15/09/2026, DEBE darse de alta de inmediato configurando un **Ejercicio Irregular del 15/09 al 31/12/2026** y declarar el ISLR de ese lapso ante el SENIAT. Omitirlo genera sanciones del COT en MTMMV y riesgo de clausura.</p>
+                    </div>
+                    <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <h3 class="font-bold text-base text-sky-300"><i class="fas fa-code-branch mr-1"></i> Método de Saldos de Corte (Go-Live a mitad de año)</h3>
+                        <p class="text-slate-300">Si la empresa ya funcionaba y cambia de software el 01/07, **NO se re-digita el pasado**. Se carga un Asiento de Saldos Iniciales al 30/06 con el Balance de Comprobación y los auxiliares pendientes de CXC/CXP e Inventarios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIDAD 3: ÁRBOLES DE CUENTAS (5 NIVELES) -->
+        <div id="u3" class="tab-content space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Unidad 3: Gestión del Árbol de Cuentas Jerárquico (5 Niveles)</h2>
+                        <p class="text-slate-500 text-sm">Denominación VEN-NIF (Efectivo y Equivalentes) e imputación exclusiva en cuentas auxiliares de Nivel 5.</p>
+                    </div>
+                    <a href="infografia_modulo11_unidad3_gestion_cuentas.png" target="_blank" class="text-amber-600 font-bold text-xs bg-amber-50 hover:bg-amber-100 border border-amber-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
+                        <i class="fas fa-expand"></i> Ver Infografía U3
+                    </a>
+                </div>
+
+                <img src="infografia_modulo11_unidad3_gestion_cuentas.png" alt="Infografía Unidad 3" class="w-full rounded-2xl border border-slate-200 shadow-sm">
+
+                <!-- ESTRUCTURA CODIFICADA -->
+                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-3 font-mono text-xs">
+                    <p class="text-emerald-400 font-bold">1.0.00.00.000 - ACTIVO (Nivel 1 - Título / Masa Patrimonial)</p>
+                    <p class="text-emerald-300 pl-4">1.1.00.00.000 - ACTIVO CORRIENTE (Nivel 2 - Sub-Título)</p>
+                    <p class="text-emerald-200 pl-8">1.1.01.00.000 - EFECTIVO Y EQUIVALENTES DE EFECTIVO (Nivel 3 - Rubro NIIF)</p>
+                    <p class="text-slate-300 pl-12">1.1.01.02.000 - BANCOS NACIONALES (Nivel 4 - Cuenta de Mayor / Sumadora)</p>
+                    <p class="text-amber-300 pl-16 font-bold">1.1.01.02.001 - Banco Mercantil Cta. Cte. N° 0105-... (Nivel 5 - Registradora Imputable)</p>
+                    <p class="text-amber-300 pl-16 font-bold">1.1.01.02.002 - Banco de Venezuela Cta. Cte. N° 0102-... (Nivel 5 - Registradora Imputable)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIDAD 4: CIBERSEGURIDAD Y REGLA 3-2-1-1-0 -->
+        <div id="u4" class="tab-content space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Unidad 4: Ciberseguridad Contable, Ransomware y la Regla 3-2-1-1-0</h2>
+                        <p class="text-slate-500 text-sm">Protección de bases de datos contables bajo estándares ISO 27001 y COBIT 2019.</p>
+                    </div>
+                    <a href="infografia_modulo11_unidad4_respaldos_321.png" target="_blank" class="text-amber-600 font-bold text-xs bg-amber-50 hover:bg-amber-100 border border-amber-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
+                        <i class="fas fa-expand"></i> Ver Infografía U4
+                    </a>
+                </div>
+
+                <img src="infografia_modulo11_unidad4_respaldos_321.png" alt="Infografía Unidad 4" class="w-full rounded-2xl border border-slate-200 shadow-sm">
+
+                <!-- TARJETAS DE LA REGLA 3-2-1-1-0 -->
+                <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs text-center">
+                    <div class="bg-slate-900 text-white p-4 rounded-2xl border border-slate-800">
+                        <span class="text-2xl font-extrabold text-amber-400 block">3</span>
+                        <span class="font-bold block text-slate-200 text-[11px]">Copias de Datos</span>
+                    </div>
+                    <div class="bg-slate-900 text-white p-4 rounded-2xl border border-slate-800">
+                        <span class="text-2xl font-extrabold text-amber-400 block">2</span>
+                        <span class="font-bold block text-slate-200 text-[11px]">Medios Distintos</span>
+                    </div>
+                    <div class="bg-slate-900 text-white p-4 rounded-2xl border border-slate-800">
+                        <span class="text-2xl font-extrabold text-amber-400 block">1</span>
+                        <span class="font-bold block text-slate-200 text-[11px]">Copia Nube Offsite</span>
+                    </div>
+                    <div class="bg-amber-950 text-white p-4 rounded-2xl border border-amber-800">
+                        <span class="text-2xl font-extrabold text-amber-300 block">1</span>
+                        <span class="font-bold block text-amber-200 text-[11px]">Copia Inmutable (Air-Gapped)</span>
+                    </div>
+                    <div class="bg-emerald-950 text-white p-4 rounded-2xl border border-emerald-800">
+                        <span class="text-2xl font-extrabold text-emerald-400 block">0</span>
+                        <span class="font-bold block text-emerald-200 text-[11px]">Errores de Prueba</span>
                     </div>
                 </div>
             </div>
@@ -233,26 +250,6 @@
             document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
             document.getElementById(t).classList.add('active');
             document.getElementById('tab-' + t).classList.add('active');
-        }
-
-        function simularAltaEmpresa() {
-            const nom = document.getElementById('alta-nombre').value;
-            const rif = document.getElementById('alta-rif').value;
-            const iva = document.getElementById('alta-iva').value;
-
-            document.getElementById('res-alta-empresa').innerHTML = `
-                <p class="text-emerald-400 font-bold mb-1"><i class="fas fa-check-circle mr-1"></i> Empresa Parametrizada Exitosamente</p>
-                <p class="text-slate-300">Empresa: <strong>${nom}</strong> | R.I.F.: <strong>${rif}</strong> | IVA: <strong>${iva}%</strong></p>
-                <p class="text-slate-400 text-[11px] mt-1">Listo para generación de Libros de Compras, Ventas y Asientos Automatizados.</p>
-            `;
-        }
-
-        function copiarRespuestas(id, title) {
-            const txt = document.getElementById(id).value;
-            if (!txt.trim()) { alert("Escribe primero tus respuestas."); return; }
-            navigator.clipboard.writeText(`📝 RESPUESTAS (${title})\n-------------------\n` + txt).then(() => {
-                alert("¡Copiado al portapapeles! Pégalo en Telegram.");
-            });
         }
     </script>
 </body>
