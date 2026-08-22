@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía Didáctica Interactiva Módulo XII | Diplomado UCSAR</title>
+    <title>Módulo XII: Registro Contable a través de Aplicaciones Informáticas | UCSAR</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
@@ -12,14 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
     <!-- Supabase JS Library CDN & Auth Core -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="../js/auth.js?v=4"></script>
+    <script src="../js/auth.js?v=6"></script>
     
     <style>
         body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #334155; }
-        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; color: #0f172a; }
+        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
         .tab-content { display: none; }
         .tab-content.active { display: block; animation: fadeIn 0.4s ease-in-out; }
-        .tab-button.active { background-color: #0891b2; color: #ffffff; box-shadow: 0 4px 14px 0 rgba(8, 145, 178, 0.39); }
+        .tab-button.active { background-color: #0891b2; color: #ffffff; box-shadow: 0 4px 14px 0 rgba(8, 145, 178, 0.35); }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
@@ -30,286 +30,236 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center gap-3">
                     <div class="bg-cyan-600 p-2 rounded-xl text-white shadow-lg">
-                        <i class="fas fa-microchip text-xl"></i>
+                        <i class="fas fa-calculator text-xl"></i>
                     </div>
                     <div>
                         <span class="font-bold text-lg text-white block leading-tight">UCSAR Portal Académico</span>
-                        <span class="text-xs text-indigo-300 font-medium">Diplomado en Contabilidad Financiera</span>
+                        <span class="text-xs text-cyan-300 font-medium">Diplomado en Contabilidad Financiera • Jornada Final (Turno Tarde)</span>
                     </div>
                 </div>
-                <a href="../index.html" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-semibold transition border border-slate-700 hover:bg-slate-800">
+                <a href="../index.html" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-semibold transition border border-slate-700 hover:bg-slate-800 flex items-center gap-2">
                     <i class="fas fa-home"></i> Inicio
                 </a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 text-white py-12 px-4">
+    <!-- HEADER PRINCIPAL -->
+    <header class="bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 text-white py-10 px-4 shadow-xl">
         <div class="max-w-7xl mx-auto">
             <div class="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-400/30 px-3.5 py-1 rounded-full text-cyan-300 text-xs font-bold uppercase mb-4">
-                <i class="fas fa-graduation-cap text-amber-400"></i> Guía Didáctica Asíncrona • Módulo XII
+                <i class="fas fa-flag-checkered text-cyan-400"></i> Turno Tarde (1:00 PM - 4:00 PM) • Módulo XII (Cierre del Diplomado)
             </div>
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Registro Contable Automatizado y Cuentas Anuales</h1>
-            <p class="text-slate-300 text-base sm:text-lg max-w-3xl">
-                Automatización de asientos predefinidos, liquidación de IVA, cierre de ejercicio, generación de Estados Financieros NIIF y protocolos de confidencialidad.
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-3">MÓDULO 12: REGISTRO CONTABLE E INFORMÁTICA</h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-3xl mb-6">
+                Asientos predefinidos, cálculo automático del IVA (16%), regularización tributaria SENIAT, apertura y cierre del ejercicio fiscal y obtención de Cuentas Anuales NIIF.
             </p>
+            
+            <!-- DESCARGAS DE MATERIALES -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-slate-900/90 border border-cyan-500/30 rounded-2xl p-4 backdrop-blur-md">
+                <a href="Trabajo_Academico_Modulo_XII_Registro_Contable_Informatico.pdf" target="_blank" class="bg-red-600/90 hover:bg-red-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
+                    <i class="fas fa-file-pdf text-xl text-red-300"></i>
+                    <div>
+                        <span class="block">Tratado Académico (PDF)</span>
+                        <span class="text-[10px] text-red-200 font-normal">Módulo 12 Completo</span>
+                    </div>
+                </a>
+                <a href="Caso_Practico_Modulo_XII_Asientos_IVA_y_Cierre_Fiscal.xlsx" download class="bg-emerald-600/90 hover:bg-emerald-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
+                    <i class="fas fa-file-excel text-xl text-emerald-300"></i>
+                    <div>
+                        <span class="block">Asientos IVA & Cierre (Excel)</span>
+                        <span class="text-[10px] text-emerald-200 font-normal">Liquidación & Cierre .XLSX</span>
+                    </div>
+                </a>
+                <a href="infografia_modulo12_liquidacion_iva_cierre.png" target="_blank" class="bg-cyan-600/90 hover:bg-cyan-600 text-white font-bold p-3 rounded-xl text-xs flex items-center gap-3 transition shadow">
+                    <i class="fas fa-receipt text-xl text-cyan-200"></i>
+                    <div>
+                        <span class="block">Infografía Liquidación IVA</span>
+                        <span class="text-[10px] text-cyan-100 font-normal">Regularización SENIAT</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow">
+    <!-- CONTENIDO PRINCIPAL Y PESTAÑAS -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
 
+        <!-- NAVEGACIÓN POR PESTAÑAS -->
         <div class="bg-white p-2 rounded-2xl shadow-sm border border-slate-200 mb-8 overflow-x-auto">
             <div class="flex space-x-2 min-w-max">
-                <button onclick="switchTab('u1')" id="tab-u1" class="tab-button active px-5 py-3 rounded-xl font-bold text-sm">U1. Asientos Predefinidos & IVA</button>
-                <button onclick="switchTab('u2')" id="tab-u2" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U2. Cierre de Ejercicio Automatizado</button>
-                <button onclick="switchTab('u3')" id="tab-u3" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U3. Cuentas Anuales & Confidencialidad</button>
+                <button onclick="switchTab('u1')" id="tab-u1" class="tab-button active px-5 py-3 rounded-xl font-bold text-sm">U1. Asientos & IVA</button>
+                <button onclick="switchTab('u2')" id="tab-u2" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U2. Libros Digitales</button>
+                <button onclick="switchTab('u3')" id="tab-u3" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U3. Liquidación IVA</button>
+                <button onclick="switchTab('u4')" id="tab-u4" class="tab-button px-5 py-3 rounded-xl font-semibold text-slate-600 text-sm">U4. Cierre del Ejercicio</button>
             </div>
         </div>
 
-        <!-- U1 -->
+        <!-- UNIDAD 1: CÁLCULO AUTOMÁTICO DE IVA Y ASIENTOS -->
         <div id="u1" class="tab-content active space-y-6">
-            <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
-                <h2 class="text-2xl font-bold mb-4">Unidad 1: Introducción de Datos y Asientos Predefinidos</h2>
-                <div class="space-y-4 text-slate-600 text-sm sm:text-base">
-                    <p>Uso de plantillas predefinidas para transacciones recurrentes (compras, ventas, servicios) con cálculo automático del IVA 16% y retenciones de ley.</p>
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Unidad 1: Introducción de Datos y Asientos con Cálculo Automático de IVA</h2>
+                    <p class="text-slate-500 text-sm">Simulador interactivo de facturación de ventas y compras con desglose automatizado de IVA 16%.</p>
                 </div>
 
-                <div class="mt-8 bg-cyan-950 text-white rounded-3xl p-6 shadow-xl">
-                    <h3 class="text-lg font-bold text-cyan-300 mb-4"><i class="fas fa-pen-to-square"></i> Cuestionario Práctico - Unidad 1</h3>
-                    <div class="space-y-4 text-sm">
-                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                            <strong>Pregunta 1.1:</strong> ¿Qué ventaja ofrece la configuración de asientos predefinidos en la automatización del IVA?
-                        </div>
-
-                        <!-- Instrucciones -->
-                        <div class="bg-cyan-900/60 border border-cyan-500/30 p-4 rounded-xl text-xs text-cyan-200">
-                            <h4 class="font-bold text-amber-300 mb-1 flex items-center gap-2">
-                                <i class="fas fa-circle-info"></i> ¿Cómo enviar tus respuestas por Telegram?
-                            </h4>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                                <li>Escribe tus respuestas abajo.</li>
-                                <li>Presiona <strong>"Copiar Mis Respuestas para Telegram"</strong>.</li>
-                                <li>Abre Telegram y presiona <strong>Pegar (Ctrl + V)</strong>.</li>
-                            </ol>
-                        </div>
-
-                        <textarea id="ans-m12-u1" rows="4" placeholder="Escribe tus respuestas aquí..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-4 text-xs font-mono"></textarea>
-                        <button onclick="copiarRespuestas('ans-m12-u1', 'Módulo 12 - Unidad 1')" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-5 py-3 rounded-xl text-xs">
-                            <i class="fas fa-copy"></i> Copiar Mis Respuestas para Telegram
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Sala de Debate U1 -->
-                <div class="mt-8 bg-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800">
-                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+                <!-- SIMULADOR INTERACTIVO DE ASIENTO CON IVA -->
+                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-4">
+                    <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                        <i class="fas fa-calculator"></i> Simulador de Asiento Predefinido con Cálculo Automático de IVA (16%)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                         <div>
-                            <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
-                                <i class="fas fa-comments"></i> Sala de Debate y Consultas - Unidad 1
-                            </h3>
-                            <p class="text-xs text-slate-400">Foro de discusión sobre asientos automatización contable.</p>
+                            <label class="block text-slate-400 mb-1">Monto Base de Venta (BS):</label>
+                            <input type="number" id="base-venta" value="100000" class="w-full bg-slate-950 border border-slate-700 text-cyan-300 p-2.5 rounded-lg font-mono">
                         </div>
-                        <span class="bg-cyan-900/80 text-cyan-300 text-xs px-3 py-1 rounded-full font-bold">Chat de Unidad</span>
-                    </div>
-
-                    <div id="comments-list-u1" class="space-y-3 mb-4 max-h-60 overflow-y-auto pr-2"></div>
-
-                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
-                        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 p-2.5 rounded-xl text-xs">
-                            <span class="text-slate-400"><i class="fas fa-user-check text-emerald-400 mr-1"></i> Usuario Autenticado:</span>
-                            <span id="user-badge-u1" class="font-bold text-cyan-300 flex items-center gap-1">
-                                <i class="fas fa-circle-notch fa-spin text-amber-400"></i> Verificando datos de sesión...
-                            </span>
+                        <div>
+                            <label class="block text-slate-400 mb-1">Alícuota IVA %:</label>
+                            <input type="number" id="alicuota-iva" value="16.00" disabled class="w-full bg-slate-950 border border-slate-700 text-slate-500 p-2.5 rounded-lg font-mono">
                         </div>
-                        <textarea id="msg-u1" rows="2" placeholder="Escribe tu mensaje sobre la Unidad 1..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs focus:outline-none focus:border-amber-400"></textarea>
-                        <button onclick="publicarComentario('u1')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-2 transition">
-                            <i class="fas fa-paper-plane"></i> Publicar en la Sala de Debate
-                        </button>
+                        <div class="flex items-end">
+                            <button onclick="calcularAsientoIVA()" class="w-full bg-cyan-600 hover:bg-cyan-500 font-bold text-white p-2.5 rounded-lg text-xs flex items-center justify-center gap-2">
+                                <i class="fas fa-play"></i> Generar Asiento Automático
+                            </button>
+                        </div>
                     </div>
+                    <div id="res-asiento-iva" class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-xs font-mono"></div>
                 </div>
 
+                <!-- CUESTIONARIO U1 -->
+                <div class="bg-cyan-950 text-white rounded-3xl p-6 shadow-xl space-y-4">
+                    <h3 class="text-lg font-bold text-cyan-300 flex items-center gap-2">
+                        <i class="fas fa-pen-to-square"></i> Cuestionario Evaluativo - Unidad 1
+                    </h3>
+                    <div class="space-y-3 text-xs">
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                            <span class="bg-cyan-600 text-white font-bold px-2 py-0.5 rounded mr-2">Pregunta 1.1</span>
+                            <strong>¿Cómo garantiza un asiento predefinido el cumplimiento tributario en el registro del Débito y Crédito Fiscal IVA?</strong>
+                        </div>
+                    </div>
+                    <textarea id="ans-m12-u1" rows="3" placeholder="Escribe tus respuestas para Telegram..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs font-mono"></textarea>
+                    <button onclick="copiarRespuestas('ans-m12-u1', 'Módulo 12 - Unidad 1')" class="bg-cyan-600 hover:bg-cyan-500 font-bold text-white px-4 py-2.5 rounded-xl text-xs flex items-center gap-2">
+                        <i class="fas fa-copy"></i> Copiar Respuestas para Telegram
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- U2 -->
+        <!-- UNIDAD 2: GESTIÓN DE LIBROS CONTABLES -->
         <div id="u2" class="tab-content space-y-6">
-            <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
-                <h2 class="text-2xl font-bold mb-4">Unidad 2: Regularización y Cierre de Ejercicio Automatizado</h2>
-                <div class="space-y-4 text-slate-600 text-sm sm:text-base">
-                    <p>Generación del Balance de Comprobación, asiento automático de cancelación de cuentas nominales contra Pérdidas y Ganancias, y creación del Asiento de Apertura del ejercicio siguiente.</p>
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Unidad 2: Gestión de los Libros Contables Digitales</h2>
+                    <p class="text-slate-500 text-sm">Emisión electrónica del Libro Diario, Libro Mayor y Libros de Compras/Ventas SENIAT.</p>
                 </div>
 
-                <div class="mt-8 bg-cyan-950 text-white rounded-3xl p-6 shadow-xl">
-                    <h3 class="text-lg font-bold text-cyan-300 mb-4"><i class="fas fa-pen-to-square"></i> Cuestionario Práctico - Unidad 2</h3>
-                    <div class="space-y-4 text-sm">
-                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                            <strong>Pregunta 2.1:</strong> Mencione los 4 pasos que ejecuta un programa contable al procesar el Cierre de Ejercicio.
-                        </div>
-
-                        <!-- Instrucciones -->
-                        <div class="bg-cyan-900/60 border border-cyan-500/30 p-4 rounded-xl text-xs text-cyan-200">
-                            <h4 class="font-bold text-amber-300 mb-1 flex items-center gap-2">
-                                <i class="fas fa-circle-info"></i> ¿Cómo enviar tus respuestas por Telegram?
-                            </h4>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                                <li>Escribe tus respuestas abajo.</li>
-                                <li>Presiona <strong>"Copiar Mis Respuestas para Telegram"</strong>.</li>
-                                <li>Abre Telegram y presiona <strong>Pegar (Ctrl + V)</strong>.</li>
-                            </ol>
-                        </div>
-
-                        <textarea id="ans-m12-u2" rows="4" placeholder="Escribe tus respuestas aquí..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-4 text-xs font-mono"></textarea>
-                        <button onclick="copiarRespuestas('ans-m12-u2', 'Módulo 12 - Unidad 2')" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-5 py-3 rounded-xl text-xs">
-                            <i class="fas fa-copy"></i> Copiar Mis Respuestas para Telegram
-                        </button>
-                    </div>
+                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-3 text-xs">
+                    <h3 class="font-bold text-cyan-400 text-sm">Libros Legales Digitales de Registro Obligatorio:</h3>
+                    <p>• <strong>Libro Diario Digital:</strong> Registro cronológico asiento por asiento con comprobante soporte.</p>
+                    <p>• <strong>Libro Mayor Digital:</strong> Agrupación por código de cuenta contable.</p>
+                    <p>• <strong>Libros Fiscales SENIAT (Compras y Ventas):</strong> Desglose de base imponible, exento, Débito/Crédito Fiscal y R.I.F. de clientes/proveedores.</p>
                 </div>
-
-                <!-- Sala de Debate U2 -->
-                <div class="mt-8 bg-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800">
-                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
-                        <div>
-                            <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
-                                <i class="fas fa-comments"></i> Sala de Debate y Consultas - Unidad 2
-                            </h3>
-                            <p class="text-xs text-slate-400">Foro de discusión sobre cierre de ejercicio automatizado.</p>
-                        </div>
-                        <span class="bg-cyan-900/80 text-cyan-300 text-xs px-3 py-1 rounded-full font-bold">Chat de Unidad</span>
-                    </div>
-
-                    <div id="comments-list-u2" class="space-y-3 mb-4 max-h-60 overflow-y-auto pr-2"></div>
-
-                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
-                        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 p-2.5 rounded-xl text-xs">
-                            <span class="text-slate-400"><i class="fas fa-user-check text-emerald-400 mr-1"></i> Usuario Autenticado:</span>
-                            <span id="user-badge-u2" class="font-bold text-cyan-300 flex items-center gap-1">
-                                <i class="fas fa-circle-notch fa-spin text-amber-400"></i> Verificando datos de sesión...
-                            </span>
-                        </div>
-                        <textarea id="msg-u2" rows="2" placeholder="Escribe tu duda sobre el cierre de ejercicio..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs focus:outline-none focus:border-amber-400"></textarea>
-                        <button onclick="publicarComentario('u2')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-2 transition">
-                            <i class="fas fa-paper-plane"></i> Publicar en la Sala de Debate
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </div>
 
-        <!-- U3 -->
+        <!-- UNIDAD 3: REGULARIZACIÓN Y LIQUIDACIÓN DEL IVA -->
         <div id="u3" class="tab-content space-y-6">
-            <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
-                <h2 class="text-2xl font-bold mb-4">Unidad 3: Cuentas Anuales y Confidencialidad</h2>
-                <div class="space-y-4 text-slate-600 text-sm sm:text-base">
-                    <p><strong>Cuentas Anuales:</strong> Emisión automática de los 5 Estados Financieros exigidos por las VEN-NIF PYME (Situación Financiera, Resultado Integral, Cambios en el Patrimonio, Flujos de Efectivo y Notas).</p>
-                    <p><strong>Confidencialidad:</strong> Responsabilidad legal y deontológica del operador informático sobre la información financiera confidencial.</p>
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Unidad 3: Regularización y Liquidación Mensual del IVA</h2>
+                    <p class="text-slate-500 text-sm">Compensación mensual entre Débito Fiscal y Crédito Fiscal.</p>
                 </div>
 
-                <div class="mt-8 bg-cyan-950 text-white rounded-3xl p-6 shadow-xl">
-                    <h3 class="text-lg font-bold text-cyan-300 mb-4"><i class="fas fa-pen-to-square"></i> Cuestionario Práctico - Unidad 3</h3>
-                    <div class="space-y-4 text-sm">
-                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                            <strong>Pregunta 3.1:</strong> Mencione los 5 Estados Financieros requeridos por la NIIF PYME y cuál es la responsabilidad legal del contador en la custodia de datos confidenciales.
-                        </div>
-
-                        <!-- Instrucciones -->
-                        <div class="bg-cyan-900/60 border border-cyan-500/30 p-4 rounded-xl text-xs text-cyan-200">
-                            <h4 class="font-bold text-amber-300 mb-1 flex items-center gap-2">
-                                <i class="fas fa-circle-info"></i> ¿Cómo enviar tus respuestas por Telegram?
-                            </h4>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                                <li>Escribe tus respuestas abajo.</li>
-                                <li>Presiona <strong>"Copiar Mis Respuestas para Telegram"</strong>.</li>
-                                <li>Abre Telegram y presiona <strong>Pegar (Ctrl + V)</strong>.</li>
-                            </ol>
-                        </div>
-
-                        <textarea id="ans-m12-u3" rows="4" placeholder="Escribe tus respuestas aquí..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-4 text-xs font-mono"></textarea>
-                        <button onclick="copiarRespuestas('ans-m12-u3', 'Módulo 12 - Unidad 3')" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-5 py-3 rounded-xl text-xs">
-                            <i class="fas fa-copy"></i> Copiar Mis Respuestas para Telegram
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Sala de Debate U3 -->
-                <div class="mt-8 bg-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800">
-                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-4">
+                    <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                        <i class="fas fa-scale-balanced"></i> Simulador de Liquidación Mensual del IVA (SENIAT)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                         <div>
-                            <h3 class="text-lg font-bold text-amber-400 flex items-center gap-2">
-                                <i class="fas fa-comments"></i> Sala de Debate y Consultas - Unidad 3
-                            </h3>
-                            <p class="text-xs text-slate-400">Foro de discusión sobre Cuentas Anuales NIIF y ética contable.</p>
+                            <label class="block text-slate-400 mb-1">Total Débito Fiscal IVA del Mes (BS):</label>
+                            <input type="number" id="deb-iva" value="16000" class="w-full bg-slate-950 border border-slate-700 text-cyan-300 p-2.5 rounded-lg font-mono">
                         </div>
-                        <span class="bg-cyan-900/80 text-cyan-300 text-xs px-3 py-1 rounded-full font-bold">Chat de Unidad</span>
-                    </div>
-
-                    <div id="comments-list-u3" class="space-y-3 mb-4 max-h-60 overflow-y-auto pr-2"></div>
-
-                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
-                        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 p-2.5 rounded-xl text-xs">
-                            <span class="text-slate-400"><i class="fas fa-user-check text-emerald-400 mr-1"></i> Usuario Autenticado:</span>
-                            <span id="user-badge-u3" class="font-bold text-cyan-300 flex items-center gap-1">
-                                <i class="fas fa-circle-notch fa-spin text-amber-400"></i> Verificando datos de sesión...
-                            </span>
+                        <div>
+                            <label class="block text-slate-400 mb-1">Total Crédito Fiscal IVA del Mes (BS):</label>
+                            <input type="number" id="cred-iva" value="8000" class="w-full bg-slate-950 border border-slate-700 text-cyan-300 p-2.5 rounded-lg font-mono">
                         </div>
-                        <textarea id="msg-u3" rows="2" placeholder="Escribe tu mensaje final de la materia..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-xs focus:outline-none focus:border-amber-400"></textarea>
-                        <button onclick="publicarComentario('u3')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-2 transition">
-                            <i class="fas fa-paper-plane"></i> Publicar en la Sala de Debate
-                        </button>
                     </div>
+                    <button onclick="simularLiquidacionIVA()" class="bg-cyan-600 hover:bg-cyan-500 font-bold text-white px-4 py-2 rounded-lg text-xs flex items-center gap-2">
+                        <i class="fas fa-calculator"></i> Liquidar IVA Mensual
+                    </button>
+                    <div id="res-liq-iva" class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-xs"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIDAD 4: CIERRE DEL EJERCICIO -->
+        <div id="u4" class="tab-content space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900">Unidad 4: Cierre del Ejercicio y Cuentas Anuales NIIF</h2>
+                    <p class="text-slate-500 text-sm">Cancelación de cuentas nominales, ISLR (30%) y emisión automatizada de EEFF.</p>
                 </div>
 
+                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-3 text-xs">
+                    <h3 class="font-bold text-cyan-400 text-sm">Pasos del Cierre Fiscal Automatizado:</h3>
+                    <p>1. <strong>Saldar Ingresos y Gastos:</strong> Traspaso a la cuenta transitoria Ganancias y Pérdidas.</p>
+                    <p>2. <strong>Cálculo de ISLR (30%):** Deducción del impuesto sobre la renta sobre la utilidad gravable.</p>
+                    <p>3. <strong>Traspaso al Patrimonio:</strong> Abono de la Utilidad Neta en Utilidades Retenidas.</p>
+                </div>
             </div>
         </div>
 
     </main>
 
     <footer class="bg-slate-900 text-white py-8 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-sm font-semibold">Diplomado en Contabilidad Financiera • UCSAR</p>
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="text-sm font-semibold">Diplomado en Contabilidad Financiera • UCSAR (Cierre Oficial)</p>
+            <p class="text-xs text-slate-400">Facilitador: MSc. Frank Clemente</p>
         </div>
     </footer>
 
     <script>
-        let currentAuthUser = { name: "Estudiante UCSAR", role: "Estudiante", isMaster: false };
-
-        async function initUserProfile() {
-            if (typeof supabaseClient !== 'undefined' && supabaseClient) {
-                try {
-                    const { data: { session } } = await supabaseClient.auth.getSession();
-                    if (session && session.user) {
-                        const email = session.user.email;
-                        const isMaster = (typeof ADMIN_EMAILS !== 'undefined' && ADMIN_EMAILS.includes(email));
-                        const name = session.user.user_metadata?.full_name || session.user.user_metadata?.name || email.split('@')[0];
-                        
-                        currentAuthUser = {
-                            name: isMaster ? (name + " (Facilitador)") : name,
-                            role: isMaster ? "Profesor" : "Estudiante",
-                            isMaster: isMaster,
-                            email: email
-                        };
-                    }
-                } catch (e) {
-                    console.log("Supabase Profile Check:", e);
-                }
-            }
-            actualizarBadgesUsuario();
-        }
-
-        function actualizarBadgesUsuario() {
-            ['u1', 'u2', 'u3'].forEach(u => {
-                const badge = document.getElementById('user-badge-' + u);
-                if (badge) {
-                    badge.innerHTML = `<i class="${currentAuthUser.isMaster ? 'fas fa-user-shield text-amber-400' : 'fas fa-user-graduate text-cyan-300'}"></i> ${currentAuthUser.name} <span class="bg-slate-800 text-slate-400 px-2 py-0.5 rounded font-normal ml-1">${currentAuthUser.role}</span>`;
-                }
-            });
-        }
-
         function switchTab(t) {
             document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
             document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
             document.getElementById(t).classList.add('active');
             document.getElementById('tab-' + t).classList.add('active');
+        }
+
+        function calcularAsientoIVA() {
+            const base = parseFloat(document.getElementById('base-venta').value) || 0;
+            const iva = base * 0.16;
+            const total = base + iva;
+
+            document.getElementById('res-asiento-iva').innerHTML = `
+                <div class="space-y-1 text-slate-300">
+                    <p class="text-emerald-400 font-bold">--- ASIENTO AUTOMÁTICO DE VENTA ---</p>
+                    <p><strong>[DEBE]</strong> Banco Mercantil Cta Cte: <span class="text-white">${total.toLocaleString('es-VE', {minimumFractionDigits:2})} BS</span></p>
+                    <p><strong>[HABER]</strong> Ventas Netas de Mercancía: <span class="text-white">${base.toLocaleString('es-VE', {minimumFractionDigits:2})} BS</span></p>
+                    <p><strong>[HABER]</strong> Débito Fiscal IVA (16% SENIAT): <span class="text-amber-300">${iva.toLocaleString('es-VE', {minimumFractionDigits:2})} BS</span></p>
+                </div>
+            `;
+        }
+
+        function simularLiquidacionIVA() {
+            const deb = parseFloat(document.getElementById('deb-iva').value) || 0;
+            const cred = parseFloat(document.getElementById('cred-iva').value) || 0;
+
+            const dif = deb - cred;
+
+            if (dif > 0) {
+                document.getElementById('res-liq-iva').innerHTML = `
+                    <p class="text-amber-400 font-bold mb-1"><i class="fas fa-exclamation-triangle mr-1"></i> RESULTADO: CUOTA TRIBUTARIA A PAGAR AL SENIAT</p>
+                    <p class="text-slate-300">Débito Fiscal (${deb.toLocaleString('es-VE')} BS) > Crédito Fiscal (${cred.toLocaleString('es-VE')} BS)</p>
+                    <p class="text-white font-bold text-sm mt-1">Monto a pagar en planilla SENIAT: ${dif.toLocaleString('es-VE', {minimumFractionDigits:2})} BS</p>
+                `;
+            } else {
+                document.getElementById('res-liq-iva').innerHTML = `
+                    <p class="text-emerald-400 font-bold mb-1"><i class="fas fa-check-circle mr-1"></i> RESULTADO: EXCEDENTE DE CRÉDITO FISCAL</p>
+                    <p class="text-slate-300">Crédito Fiscal (${cred.toLocaleString('es-VE')} BS) > Débito Fiscal (${deb.toLocaleString('es-VE')} BS)</p>
+                    <p class="text-white font-bold text-sm mt-1">Excedente a favor para el mes siguiente: ${Math.abs(dif).toLocaleString('es-VE', {minimumFractionDigits:2})} BS</p>
+                `;
+            }
         }
 
         function copiarRespuestas(id, title) {
@@ -320,54 +270,9 @@
             });
         }
 
-        function publicarComentario(unidad) {
-            const msgInput = document.getElementById('msg-' + unidad);
-            const msg = msgInput.value.trim();
-
-            if (!msg) { alert("Escribe un mensaje antes de publicar."); return; }
-
-            const nuevoComentario = {
-                author: currentAuthUser.name,
-                role: currentAuthUser.role,
-                msg: msg,
-                fecha: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-            };
-
-            let comentarios = JSON.parse(localStorage.getItem('m12_chat_' + unidad) || '[]');
-            comentarios.push(nuevoComentario);
-            localStorage.setItem('m12_chat_' + unidad, JSON.stringify(comentarios));
-
-            msgInput.value = '';
-            cargarComentarios(unidad);
-        }
-
-        function cargarComentarios(unidad) {
-            const list = document.getElementById('comments-list-' + unidad);
-            if (!list) return;
-
-            let comentarios = JSON.parse(localStorage.getItem('m12_chat_' + unidad) || '[]');
-            if (comentarios.length === 0) {
-                list.innerHTML = `<p class="text-xs text-slate-500 italic p-3 text-center">Aún no hay mensajes en esta sala. ¡Sé el primero en aportar o preguntar!</p>`;
-                return;
-            }
-
-            list.innerHTML = comentarios.map(c => `
-                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800/80">
-                    <div class="flex justify-between items-center mb-1">
-                        <span class="font-bold text-xs ${c.role === 'Profesor' ? 'text-amber-400' : 'text-cyan-300'}">
-                            <i class="${c.role === 'Profesor' ? 'fas fa-user-shield' : 'fas fa-user-graduate'}"></i> ${c.author} 
-                            <span class="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded ml-1 font-normal">${c.role}</span>
-                        </span>
-                        <span class="text-[10px] text-slate-500">${c.fecha}</span>
-                    </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">${c.msg}</p>
-                </div>
-            `).join('');
-        }
-
         document.addEventListener('DOMContentLoaded', () => {
-            initUserProfile();
-            ['u1', 'u2', 'u3'].forEach(cargarComentarios);
+            calcularAsientoIVA();
+            simularLiquidacionIVA();
         });
     </script>
 </body>

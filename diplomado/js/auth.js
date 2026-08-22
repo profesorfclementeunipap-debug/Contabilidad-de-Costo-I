@@ -36,10 +36,7 @@ function initSupabaseAuth() {
 }
 
 function esRutaRestringida(path) {
-    const p = decodeURIComponent(path).toUpperCase();
-    // Módulos VIII, IX y X HABILITADOS para todos — no restringidos
-    if (p.includes("MODULO_XI") || p.includes("MODULO XI")) return true;
-    if (p.includes("MODULO_XII") || p.includes("MODULO XII")) return true;
+    // Todos los módulos HABILITADOS para el Cierre del Diplomado
     return false;
 }
 
@@ -126,28 +123,57 @@ function actualizarVistaModulosIndex(isAdmin) {
             }
         }
 
-        // Módulos restringidos (XI, XII)
-        const modulos = [
-            { id: "modulo11", num: "XI", url: "MODULO XI/MODULO_XI.html" },
-            { id: "modulo12", num: "XII", url: "MODULO XII/MODULO_XII.html" }
-        ];
+        // Módulo XI: SIEMPRE habilitado para el Cierre del Diplomado
+        const modulo11container = document.getElementById("modulo11");
+        if (modulo11container) {
+            const badge11 = modulo11container.querySelector(".flex.justify-between.items-start.mb-4");
+            const btn11 = modulo11container.querySelector(".flex.flex-col.mt-auto");
+            if (badge11) {
+                badge11.innerHTML = `
+                    <div>
+                        <span class="bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider"><i class="fas fa-check-circle mr-1 text-emerald-600"></i> DISPONIBLE</span>
+                        <span class="text-slate-600 text-xs font-semibold ml-2">MÓDULO XI</span>
+                    </div>
+                    <span class="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded-full">Final</span>
+                `;
+            }
+            if (btn11) {
+                btn11.innerHTML = `
+                    <a href="MODULO XI/MODULO_XI.html" class="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-3 rounded-lg font-bold flex items-center justify-center transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="fas fa-book-open mr-2"></i> Acceder al Módulo XI
+                    </a>
+                    <a href="MODULO XI/Trabajo_Academico_Modulo_XI_Aplicaciones_Informaticas.pdf" target="_blank" class="w-full bg-white border border-amber-200 text-amber-700 hover:bg-amber-50 py-2.5 rounded-lg font-semibold flex items-center justify-center transition-all text-sm mt-2">
+                        <i class="fas fa-file-pdf mr-2 text-red-500"></i> Tratado Académico (PDF)
+                    </a>
+                `;
+            }
+        }
 
-        modulos.forEach(mod => {
-            const container = document.getElementById(mod.id);
-            if (!container) return;
-
-            const badgeContainer = container.querySelector(".flex.justify-between.items-start.mb-4");
-            const btnContainer = container.querySelector(".flex.flex-col.mt-auto");
-
-            if (isAdmin) {
-                if (badgeContainer) {
-                    badgeContainer.innerHTML = `
-                        <div>
-                            <span class="bg-indigo-600 text-white text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider"><i class="fas fa-user-shield mr-1"></i> MODO ADMIN</span>
-                            <span class="text-slate-400 text-xs font-semibold ml-2">MÓDULO ${mod.num}</span>
-                        </div>
-                    `;
-                }
+        // Módulo XII: SIEMPRE habilitado para el Cierre del Diplomado
+        const modulo12container = document.getElementById("modulo12");
+        if (modulo12container) {
+            const badge12 = modulo12container.querySelector(".flex.justify-between.items-start.mb-4");
+            const btn12 = modulo12container.querySelector(".flex.flex-col.mt-auto");
+            if (badge12) {
+                badge12.innerHTML = `
+                    <div>
+                        <span class="bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider"><i class="fas fa-check-circle mr-1 text-emerald-600"></i> DISPONIBLE</span>
+                        <span class="text-slate-600 text-xs font-semibold ml-2">MÓDULO XII</span>
+                    </div>
+                    <span class="bg-cyan-100 text-cyan-700 text-xs font-bold px-2 py-0.5 rounded-full">Final</span>
+                `;
+            }
+            if (btn12) {
+                btn12.innerHTML = `
+                    <a href="MODULO XII/MODULO_XII.html" class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white py-3 rounded-lg font-bold flex items-center justify-center transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="fas fa-book-open mr-2"></i> Acceder al Módulo XII
+                    </a>
+                    <a href="MODULO XII/Trabajo_Academico_Modulo_XII_Registro_Contable_Informatico.pdf" target="_blank" class="w-full bg-white border border-cyan-200 text-cyan-700 hover:bg-cyan-50 py-2.5 rounded-lg font-semibold flex items-center justify-center transition-all text-sm mt-2">
+                        <i class="fas fa-file-pdf mr-2 text-red-500"></i> Tratado Académico (PDF)
+                    </a>
+                `;
+            }
+        }
                 if (btnContainer) {
                     btnContainer.innerHTML = `
                         <a href="${mod.url}" class="bg-indigo-600 hover:bg-indigo-700 text-white text-center py-3 rounded-lg font-semibold transition flex items-center justify-center shadow-md">
