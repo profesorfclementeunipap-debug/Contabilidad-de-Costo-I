@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo XII: Registro Contable a través de Aplicaciones Informáticas | UCSAR</title>
+    <title>Módulo XII: Registro Contable e Informática | UCSAR</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
@@ -34,7 +34,7 @@
                     </div>
                     <div>
                         <span class="font-bold text-lg text-white block leading-tight">UCSAR Portal Académico</span>
-                        <span class="text-xs text-cyan-300 font-medium">Diplomado en Contabilidad Financiera • Módulo XII Actualizado</span>
+                        <span class="text-xs text-cyan-300 font-medium">Diplomado en Contabilidad Financiera • Módulo XII Actualizado 2026</span>
                     </div>
                 </div>
                 <a href="../index.html" class="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-semibold transition border border-slate-700 hover:bg-slate-800 flex items-center gap-2">
@@ -52,7 +52,7 @@
             </div>
             <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-3">MÓDULO 12: REGISTRO CONTABLE E INFORMÁTICA</h1>
             <p class="text-slate-300 text-base sm:text-lg max-w-3xl mb-6">
-                Asientos predefinidos con cálculo automático de IVA (16%), Libros Fiscales SENIAT (Providencia 0071 / SNAT/2024/000121), regularización del IVA, Cierre Fiscal (ISLR 30%), Cuentas Anuales NIIF y Código de Ética FCCPV.
+                Cierre legal con las Providencias SENIAT 00084 (Derogatoria 121) y 00080 (RIF en Libros 2026), Asientos predefinidos IVA (16%), Compensación Art. 44 Ley IVA, Cierre Fiscal ISLR (30%), Cuentas Anuales NIIF y Código de Ética FCCPV.
             </p>
             
             <!-- DESCARGAS DE MATERIALES -->
@@ -96,11 +96,11 @@
         <div class="bg-white p-2 rounded-2xl shadow-sm border border-slate-200 mb-8 overflow-x-auto">
             <div class="flex space-x-2 min-w-max">
                 <button onclick="switchTab('u1')" id="tab-u1" class="tab-button active px-4 py-2.5 rounded-xl font-bold text-xs">U1. Asientos & IVA (16%)</button>
-                <button onclick="switchTab('u2')" id="tab-u2" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U2. Libros SENIAT</button>
-                <button onclick="switchTab('u3')" id="tab-u3" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U3. Liquidación IVA</button>
-                <button onclick="switchTab('u4')" id="tab-u4" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U4. Cierre Fiscal & ISLR</button>
+                <button onclick="switchTab('u2')" id="tab-u2" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U2. Libros SENIAT (00084/00080)</button>
+                <button onclick="switchTab('u3')" id="tab-u3" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U3. Liquidación IVA (Art. 44)</button>
+                <button onclick="switchTab('u4')" id="tab-u4" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U4. Cierre Fiscal & ISLR (30%)</button>
                 <button onclick="switchTab('u5')" id="tab-u5" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U5. Cuentas Anuales NIIF</button>
-                <button onclick="switchTab('u6')" id="tab-u6" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U6. Ética & Confidencialidad</button>
+                <button onclick="switchTab('u6')" id="tab-u6" class="tab-button px-4 py-2.5 rounded-xl font-semibold text-slate-600 text-xs">U6. Ética & Responsabilidad</button>
             </div>
         </div>
 
@@ -110,7 +110,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-start gap-4">
                     <div>
                         <h2 class="text-2xl font-bold text-slate-900">Unidad 1: Introducción de Datos y Asientos con Cálculo Automático de IVA (16%)</h2>
-                        <p class="text-slate-500 text-sm">Automatización de ventas y compras con plantilla predefinida y validación de R.I.F. SENIAT.</p>
+                        <p class="text-slate-500 text-sm">Desglose de R.I.F., Razón Social y Dirección Fiscal (Requisitos Obligatorios Art. 13 Providencia 00071).</p>
                     </div>
                     <a href="infografia_modulo12_unidad1_asientos_iva.png" target="_blank" class="text-cyan-600 font-bold text-xs bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
                         <i class="fas fa-expand"></i> Ver Infografía U1
@@ -118,6 +118,12 @@
                 </div>
 
                 <img src="infografia_modulo12_unidad1_asientos_iva.png" alt="Infografía Unidad 1" class="w-full rounded-2xl border border-slate-200 shadow-sm">
+
+                <!-- ACLARATORIA LEGAL: TELÉFONO EN FACTURA -->
+                <div class="bg-cyan-950 text-white p-5 rounded-2xl border border-cyan-800 space-y-2 text-xs">
+                    <h3 class="font-bold text-base text-cyan-300"><i class="fas fa-info-circle mr-1"></i> Aclaratoria Tributaria: El Mito del Número de Teléfono</h3>
+                    <p class="text-slate-200">El número de teléfono del cliente **NO es un requisito fiscal obligatorio** exigido por la Providencia SENIAT 00071. Los software lo incluyen por diseño comercial u operativo de envío digital. Los únicos tres pilares de identificación exigidos por ley para evitar multas son: **Nombre/Razón Social, R.I.F. y Domicilio Fiscal**.</p>
+                </div>
 
                 <!-- SIMULADOR INTERACTIVO DE ASIENTO CON IVA -->
                 <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-4">
@@ -144,13 +150,13 @@
             </div>
         </div>
 
-        <!-- UNIDAD 2: LIBROS LEGALES Y FISCALES DIGITALES -->
+        <!-- UNIDAD 2: LIBROS LEGALES Y FISCALES DIGITALES (PROVIDENCIAS 00084 Y 00080) -->
         <div id="u2" class="tab-content space-y-6">
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
                 <div class="flex flex-col md:flex-row justify-between items-start gap-4">
                     <div>
-                        <h2 class="text-2xl font-bold text-slate-900">Unidad 2: Gestión de los Libros Contables y Libros Fiscales SENIAT</h2>
-                        <p class="text-slate-500 text-sm">Libro Diario, Libro Mayor, Balances y Libros de Compras/Ventas (Providencia 0071 / SNAT/2024/000121).</p>
+                        <h2 class="text-2xl font-bold text-slate-900">Unidad 2: Gestión de Libros Contables y Fiscales (Providencias 00084 y 00080 G.O. 43.435)</h2>
+                        <p class="text-slate-500 text-sm">Derogatoria de la 121, ratificación de la Providencia 00071 y obligación de R.I.F. en Libros Diario y Mayor (2026).</p>
                     </div>
                     <a href="infografia_modulo12_unidad2_libros_digitales.png" target="_blank" class="text-cyan-600 font-bold text-xs bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
                         <i class="fas fa-expand"></i> Ver Infografía U2
@@ -159,10 +165,16 @@
 
                 <img src="infografia_modulo12_unidad2_libros_digitales.png" alt="Infografía Unidad 2" class="w-full rounded-2xl border border-slate-200 shadow-sm">
 
-                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-3 text-xs">
-                    <h3 class="font-bold text-cyan-400 text-sm">Requisitos Legales de Libros Digitales en Venezuela:</h3>
-                    <p>• <strong>Libro Diario Digital:</strong> Registro cronológico asiento por asiento con correlativo único e inalterable.</p>
-                    <p>• <strong>Libros Fiscales de Compras y Ventas SENIAT:</strong> Desglose obligatorio de R.I.F., N° de Factura, N° de Control, Base Imponible, IVA 16% y Retenciones de IVA (75% o 100%).</p>
+                <!-- MARCO LEGAL GACETA 43.435 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                    <div class="bg-amber-950 text-white p-5 rounded-2xl border border-amber-800 space-y-2">
+                        <h3 class="font-bold text-base text-amber-300"><i class="fas fa-gavel mr-1"></i> Providencia SNAT/2026/00084 (Derogatoria 121)</h3>
+                        <p class="text-slate-200">Deroga expresamente la Providencia 121. Se elimina el registro obligatorio de proveedores informáticos y la transmisión en tiempo real de facturas. El estándar único de facturación y Libros de IVA se rige por la **Providencia 00071**.</p>
+                    </div>
+                    <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <h3 class="font-bold text-base text-sky-300"><i class="fas fa-id-card mr-1"></i> Providencia SNAT/2026/00080 (Reforma del R.I.F.)</h3>
+                        <p class="text-slate-300">Establece la obligatoriedad de reflejar el N° de R.I.F. en el **Libro Diario, Libro Mayor, Libros de IVA**, empaques de productos del fabricante e importador y publicaciones publicitarias en medios digitales.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,8 +184,8 @@
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
                 <div class="flex flex-col md:flex-row justify-between items-start gap-4">
                     <div>
-                        <h2 class="text-2xl font-bold text-slate-900">Unidad 3: Regularización y Liquidación Mensual del IVA SENIAT</h2>
-                        <p class="text-slate-500 text-sm">Compensación mensual entre Débito Fiscal y Crédito Fiscal para emisión de planilla de pago SENIAT.</p>
+                        <h2 class="text-2xl font-bold text-slate-900">Unidad 3: Regularización y Liquidación Mensual del IVA (Art. 44 Ley IVA)</h2>
+                        <p class="text-slate-500 text-sm">Compensación entre Débito y Crédito Fiscal y tratamiento del Excedente en el Activo Corriente.</p>
                     </div>
                     <a href="infografia_modulo12_unidad3_liquidacion_iva.png" target="_blank" class="text-cyan-600 font-bold text-xs bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
                         <i class="fas fa-expand"></i> Ver Infografía U3
@@ -189,17 +201,17 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                         <div>
                             <label class="block text-slate-400 mb-1">Total Débito Fiscal IVA del Mes (BS):</label>
-                            <input type="number" id="deb-iva" value="16000" class="w-full bg-slate-950 border border-slate-700 text-cyan-300 p-2.5 rounded-lg font-mono">
+                            <input type="number" id="deb-iva" value="9000" class="w-full bg-slate-950 border border-slate-700 text-cyan-300 p-2.5 rounded-lg font-mono">
                         </div>
                         <div>
                             <label class="block text-slate-400 mb-1">Total Crédito Fiscal IVA del Mes (BS):</label>
-                            <input type="number" id="cred-iva" value="8000" class="w-full bg-slate-950 border border-slate-700 text-cyan-300 p-2.5 rounded-lg font-mono">
+                            <input type="number" id="cred-iva" value="15000" class="w-full bg-slate-950 border border-slate-700 text-cyan-300 p-2.5 rounded-lg font-mono">
                         </div>
                     </div>
                     <button onclick="simularLiquidacionIVA()" class="bg-cyan-600 hover:bg-cyan-500 font-bold text-white px-4 py-2 rounded-lg text-xs flex items-center gap-2">
                         <i class="fas fa-calculator"></i> Liquidar IVA Mensual
                     </button>
-                    <div id="res-liq-iva" class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-xs"></div>
+                    <div id="res-liq-iva" class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-xs font-mono"></div>
                 </div>
             </div>
         </div>
@@ -210,7 +222,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-start gap-4">
                     <div>
                         <h2 class="text-2xl font-bold text-slate-900">Unidad 4: Apertura y Cierre del Ejercicio Económico (ISLR 30%)</h2>
-                        <p class="text-slate-500 text-sm">Cierre de Cuentas Nominal de Ingresos, Costos y Gastos contra Ganancias y Pérdidas.</p>
+                        <p class="text-slate-500 text-sm">Cierre de Cuentas Nominal de Ingresos y Gastos contra Ganancias y Pérdidas y traspaso a Utilidades Retenidas.</p>
                     </div>
                     <a href="infografia_modulo12_unidad4_cierre_fiscal.png" target="_blank" class="text-cyan-600 font-bold text-xs bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
                         <i class="fas fa-expand"></i> Ver Infografía U4
@@ -220,11 +232,10 @@
                 <img src="infografia_modulo12_unidad4_cierre_fiscal.png" alt="Infografía Unidad 4" class="w-full rounded-2xl border border-slate-200 shadow-sm">
 
                 <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-3 text-xs">
-                    <h3 class="font-bold text-cyan-400 text-sm">Pasos del Cierre Fiscal Automatizado:</h3>
-                    <p>1. <strong>Cancelación de Ingresos:</strong> Debitar Ingresos y acreditar la cuenta transitoria Ganancias y Pérdidas.</p>
-                    <p>2. <strong>Cancelación de Gastos:</strong> Acreditar Gastos/Costos y debitar Ganancias y Pérdidas.</p>
-                    <p>3. <strong>Cálculo del ISLR (30%):</strong> Deducción de la provisión por impuesto sobre la renta sobre la utilidad fiscal ajustada.</p>
-                    <p>4. <strong>Traslado al Patrimonio:</strong> Abono del resultado neto final en la cuenta **Utilidades Retenidas**.</p>
+                    <h3 class="font-bold text-cyan-400 text-sm">Resumen de Cierre Comercializadora Los Andes C.A.:</h3>
+                    <p>• <strong>Ganancias y Pérdidas (Antes de ISLR):</strong> 2.000.000 BS (Ventas) - 1.200.000 BS (Gastos) = <strong>800.000 BS</strong>.</p>
+                    <p>• <strong>Provisión ISLR (30% SENIAT):</strong> 800.000 BS x 30% = <strong>240.000 BS</strong> (Pasivo Corriente).</p>
+                    <p>• <strong>Utilidad Neta al Patrimonio:</strong> 800.000 BS - 240.000 BS = <strong>560.000 BS</strong> (Utilidades Retenidas).</p>
                 </div>
             </div>
         </div>
@@ -235,7 +246,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-start gap-4">
                     <div>
                         <h2 class="text-2xl font-bold text-slate-900">Unidad 5: Obtención de Cuentas Anuales (VEN-NIF)</h2>
-                        <p class="text-slate-500 text-sm">Emisión de Estado de Situación Financiera, Estado de Resultados e Informes de Auditores.</p>
+                        <p class="text-slate-500 text-sm">Emisión de Estado de Situación Financiera, Resultados Integrales y Auditoría de Cuentas Huérfanas.</p>
                     </div>
                     <a href="infografia_modulo12_unidad5_cuentas_anuales.png" target="_blank" class="text-cyan-600 font-bold text-xs bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
                         <i class="fas fa-expand"></i> Ver Infografía U5
@@ -243,12 +254,6 @@
                 </div>
 
                 <img src="infografia_modulo12_unidad5_cuentas_anuales.png" alt="Infografía Unidad 5" class="w-full rounded-2xl border border-slate-200 shadow-sm">
-
-                <div class="bg-slate-900 text-white p-6 rounded-3xl border border-slate-800 space-y-3 text-xs">
-                    <h3 class="font-bold text-cyan-400 text-sm">Estados Financieros Automatizados NIIF:</h3>
-                    <p>• <strong>Estado de Situación Financiera:</strong> Muestra Activos, Pasivos y Patrimonio clasificados en corrientes y no corrientes.</p>
-                    <p>• <strong>Estado de Resultados Integrales:</strong> Muestra la Utilidad Bruta, Operativa (EBIT) y Neta del ejercicio.</p>
-                </div>
             </div>
         </div>
 
@@ -258,7 +263,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-start gap-4">
                     <div>
                         <h2 class="text-2xl font-bold text-slate-900">Unidad 6: Responsabilidad Legal, Confidencialidad y Código de Ética FCCPV</h2>
-                        <p class="text-slate-500 text-sm">Conservación de libros por 10 años (Art. 44 C.Comercio), segregación de perfiles y responsabilidad penal del Contador.</p>
+                        <p class="text-slate-500 text-sm">Conservación de libros por 10 años (Art. 44 C.Comercio), segregación de roles y definición funcional del software.</p>
                     </div>
                     <a href="infografia_modulo12_unidad6_etica_confidencialidad.png" target="_blank" class="text-cyan-600 font-bold text-xs bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 px-3 py-2 rounded-xl transition flex items-center gap-1">
                         <i class="fas fa-expand"></i> Ver Infografía U6
@@ -266,17 +271,6 @@
                 </div>
 
                 <img src="infografia_modulo12_unidad6_etica_confidencialidad.png" alt="Infografía Unidad 6" class="w-full rounded-2xl border border-slate-200 shadow-sm">
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                    <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-2">
-                        <h3 class="font-bold text-base text-cyan-300"><i class="fas fa-balance-scale mr-1"></i> Responsabilidad Legal (Código de Comercio Art. 44)</h3>
-                        <p class="text-slate-300">Obligatoriedad de conservar todos los libros contables y comprobantes digitales durante un período mínimo de **10 años**. Su alteración o destrucción intencionada acarrea responsabilidad penal y civil.</p>
-                    </div>
-                    <div class="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 space-y-2">
-                        <h3 class="font-bold text-base text-cyan-300"><i class="fas fa-user-shield mr-1"></i> Segregación de Roles & Código de Ética FCCPV</h3>
-                        <p class="text-slate-300">El sistema debe contar con perfiles diferenciados: quien emite la factura NO puede aprobar la nota de crédito ni auditar la cuenta bancaria. Garantiza la objetividad e integridad profesional.</p>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -326,9 +320,9 @@
                 `;
             } else {
                 document.getElementById('res-liq-iva').innerHTML = `
-                    <p class="text-emerald-400 font-bold mb-1"><i class="fas fa-check-circle mr-1"></i> RESULTADO: EXCEDENTE DE CRÉDITO FISCAL</p>
+                    <p class="text-emerald-400 font-bold mb-1"><i class="fas fa-check-circle mr-1"></i> RESULTADO: EXCEDENTE DE CRÉDITO FISCAL (ACTIVO CORRIENTE)</p>
                     <p class="text-slate-300">Crédito Fiscal (${cred.toLocaleString('es-VE')} BS) > Débito Fiscal (${deb.toLocaleString('es-VE')} BS)</p>
-                    <p class="text-white font-bold text-sm mt-1">Excedente a favor para el mes siguiente: ${Math.abs(dif).toLocaleString('es-VE', {minimumFractionDigits:2})} BS</p>
+                    <p class="text-white font-bold text-sm mt-1">Excedente a favor en Activo para la Forma 30 del mes subsiguiente: ${Math.abs(dif).toLocaleString('es-VE', {minimumFractionDigits:2})} BS</p>
                 `;
             }
         }
